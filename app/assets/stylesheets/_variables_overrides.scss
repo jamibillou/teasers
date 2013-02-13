@@ -1,0 +1,170 @@
+// VARIABLES
+// Variables to customize the look and feel of Bootstrap
+// -----------------------------------------------------
+
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+$black:                 #000 !default;
+$grayDarker:            #222 !default;
+$grayDark:              #444 !default;
+$gray:                  #666 !default;
+$grayLight:             #999 !default;
+$grayLighter:           #e2e2e2 !default;
+$white:                 #fff !default;
+
+// Accent colors
+// ----------------------------
+$blue:                  #0083e0 !default;
+$red:                   #dd3b2e !default;
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        #f1f3f4 !default;
+$textColor:             $grayDark !default;
+
+// Links
+// -------------------------
+$linkColor:             $blue !default;
+$linkColorHover:        darken($linkColor, 10%) !default;
+
+// Typography
+// -------------------------
+$sansFontFamily:        Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+$baseFontSize:          13px !default;
+$baseFontFamily:        $sansFontFamily !default;
+$baseLineHeight:        20px !default;
+$altFontFamily:         $serifFontFamily !default;
+
+$headingsFontFamily:    inherit !default; // empty to use BS default, @baseFontFamily
+$headingsFontWeight:    bold !default;    // instead of browser default, bold
+$headingsColor:         $textColor !default; // empty to use BS default, @textColor
+
+// Buttons
+// -------------------------
+$btnBackground:                     $white !default;
+$btnBackgroundHighlight:            $grayLighter !default;
+$btnBorder:                         $black !default;
+
+$btnPrimaryBackground:              $blue !default;
+$btnPrimaryBackgroundHighlight:     #006dba !default;
+
+$btnDangerBackground:               $red !default;
+$btnDangerBackgroundHighlight:      #b33a31 !default;
+
+$btnInverseBackground:              darken($grayLighter, 2%) !default;
+$btnInverseBackgroundHighlight:     darken($grayLighter, 9%) !default;
+
+$btnLinkedinBackground:             #0599cd !default;
+$btnLinkedinBackgroundHighlight:    darken(#0599cd, 7%) !default;
+
+$btnTwitterBackground:              darken(#02c3f1, 2%) !default;
+$btnTwitterBackgroundHighlight:     darken(#02c3f1, 9%) !default;
+
+$btnFacebookBackground:             #5978af !default;
+$btnFacebookBackgroundHighlight:    darken(#5978af, 7%) !default;
+
+$btnGoogleBackground:               #3c3a3b !default;
+$btnGoogleBackgroundHighlight:      darken(#3c3a3b, 7%) !default;
+
+// Forms
+// -------------------------
+$inputBackground:               $white !default;
+$inputBorder:                   #ccc !default;
+$inputBorderRadius:             3px !default;
+$inputDisabledBackground:       $grayLighter !default;
+$formActionsBackground:         #f5f5f5 !default;
+
+// Dropdowns
+// -------------------------
+$dropdownBackground:            $white !default;
+$dropdownBorder:                rgba(0,0,0,.2) !default;
+$dropdownLinkColor:             $grayDark !default;
+$dropdownLinkColorHover:        $white !default;
+$dropdownLinkBackgroundHover:   $linkColor !default;
+
+$dropdownDividerTop:            #e5e5e5 !default;
+$dropdownDividerBottom:         $white !default;
+
+// Input placeholder text color
+// -------------------------
+$placeholderText:               lighten($grayLight, 10%) !default;
+
+// Images
+// -------------------------
+$navbarBrandHeight:             35px;
+$navbarBrandWidth:              123px;
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Wells
+// -------------------------
+$wellBackground:                  $white !default;
+
+// Navbar
+// -------------------------
+$navbarHeight:                    90px !default;
+$navbarBackground:                $white !default;
+$navbarBackgroundHighlight:       $white !default;
+$navbarText:                      $gray !default;
+$navbarTextLinkColor:             $blue !default;
+$navbarTextLinkColorHover:        darken($navbarTextLinkColor, 10%) !default;
+$navbarTextLinkColorActive:       $navbarTextLinkColorHover !default;
+$navbarLinkColor:                 $gray !default;
+$navbarLinkColorHover:            $black !default;
+$navbarLinkColorActive:           $navbarLinkColorHover !default;
+$navbarLinkBackgroundHover:       transparent !default;
+$navbarLinkBackgroundActive:      $navbarBackground !default;
+$navbarSearchBackground:          lighten($navbarBackground, 25%) !default;
+
+// Hero unit
+// -------------------------
+$heroUnitBackground:              $wellBackground !default;
+$heroUnitHeadingColor:            inherit !default;
+$heroUnitLeadColor:               inherit !default;
+
+// Form states and alerts
+// -------------------------
+$warningText:             darken(#e8d49f, 15%) !default;
+$warningAlertText:        $grayDark !default;
+$warningBackground:       #fff6ce !default;
+$warningBorder:           #e8d49f !default;
+
+$errorText:               darken(#e18c8c, 15%) !default;
+$errorAlertText:          $grayDark !default;
+$errorBackground:         #ebc0c0 !default;
+$errorBorder:             #e18c8c !default;
+
+$successText:             darken(#a3ce94, 15%) !default;
+$successAlertText:        $grayDark !default;
+$successBackground:       #caecbf !default;
+$successBorder:           #a3ce94 !default;
+
+$infoText:                darken(#9dc0ea, 15%) !default;
+$infoAlertText:           $grayDark !default;
+$infoBackground:          #bedcff !default;
+$infoBorder:              #9dc0ea !default;
+
+// Tooltips and popovers
+// -------------------------
+$tooltipColor:            #fff !default;
+$tooltipBackground:       #000 !default;
+$tooltipArrowWidth:       5px !default;
+$tooltipArrowColor:       $tooltipBackground !default;
+
+$popoverBackground:       #fff !default;
+$popoverArrowWidth:       5px !default;
+$popoverArrowColor:       $white !default;
+$popoverTitleBackground:  darken($popoverBackground, 5%) !default;
+
+// Special enhancement for popovers
+$popoverArrowOuterWidth:  $popoverArrowWidth + 1 !default;
+$popoverArrowOuterColor:  rgba(0,0,0,.25) !default;

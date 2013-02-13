@@ -1,0 +1,59 @@
+// NAVBAR (FIXED AND STATIC)
+// -------------------------
+
+
+// COMMON STYLES
+// -------------
+
+.navbar .navbar-inner{
+  background:$navbarBackground;
+  border:0;
+  @include box-shadow(none);
+  font-weight:bold;
+  .container{
+    .brand{
+      padding-top:$navbarHeight/2-$navbarBrandHeight/2;
+      padding-bottom:$navbarHeight/2-$navbarBrandHeight/2;
+      margin-right:30px;
+    }
+    .nav{
+      font-size:$baseFontSize + 1;
+      li a{
+        text-shadow:none;
+      }
+    }
+    .nav.pull-right{
+      margin-right:0;
+      .dropdown-toggle{
+        padding-right:0;
+      }
+    }
+    .navbar-text{
+      padding-right:5px;
+    }
+  }
+}
+
+// image
+// -----
+
+.navbar .nav img {
+  width:28px;
+  height:28px;
+  margin:-2px 10px 0 0;
+  float:left;
+}
+
+// Navbar button for responsive layouts
+// ------------------------------------
+
+.navbar .btn-navbar {
+  float:left;
+  margin-left:15px;
+  margin-right:12px;
+  @include buttonBackground($grayLighter, $grayLighter);
+}
+.navbar .btn-navbar .icon-bar {
+  background-color:$white;
+  @include box-shadow(none);
+}

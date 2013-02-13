@@ -1,0 +1,127 @@
+// BUTTON GROUPS
+// -------------
+
+
+// Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
+.btn-group > .btn:first-child {
+  margin-left: 0;
+     -webkit-border-top-left-radius: 8px;
+         -moz-border-radius-topleft: 8px;
+             border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+      -moz-border-radius-bottomleft: 8px;
+          border-bottom-left-radius: 8px;
+}
+// Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
+.btn-group > .btn:last-child, .btn-group > .dropdown-toggle {
+     -webkit-border-top-right-radius: 8px;
+         -moz-border-radius-topright: 8px;
+             border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+      -moz-border-radius-bottomright: 8px;
+          border-bottom-right-radius: 8px;
+}
+// Reset corners for large buttons
+.btn-group > .btn.large:first-child {
+  margin-left: 0;
+     -webkit-border-top-left-radius: 10px;
+         -moz-border-radius-topleft: 10px;
+             border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+      -moz-border-radius-bottomleft: 10px;
+          border-bottom-left-radius: 10px;
+}
+.btn-group > .btn.large:last-child, .btn-group > .large.dropdown-toggle {
+     -webkit-border-top-right-radius: 10px;
+         -moz-border-radius-topright: 10px;
+             border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+      -moz-border-radius-bottomright: 10px;
+          border-bottom-right-radius: 10px;
+}
+// Reset corners for small buttons
+.btn-group > .btn.small:first-child {
+  margin-left: 0;
+     -webkit-border-top-left-radius: 7px;
+         -moz-border-radius-topleft: 7px;
+             border-top-left-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+      -moz-border-radius-bottomleft: 7px;
+          border-bottom-left-radius: 7px;
+}
+.btn-group > .btn.small:last-child, .btn-group > .small.dropdown-toggle {
+     -webkit-border-top-right-radius: 7px;
+         -moz-border-radius-topright: 7px;
+             border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+      -moz-border-radius-bottomright: 7px;
+          border-bottom-right-radius: 7px;
+}
+// Reset corners for mini buttons
+.btn-group > .btn.mini:first-child {
+  margin-left: 0;
+     -webkit-border-top-left-radius: 5px;
+         -moz-border-radius-topleft: 5px;
+             border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+      -moz-border-radius-bottomleft: 5px;
+          border-bottom-left-radius: 5px;
+}
+.btn-group > .btn.mini:last-child, .btn-group > .mini.dropdown-toggle {
+     -webkit-border-top-right-radius: 5px;
+         -moz-border-radius-topright: 5px;
+             border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+      -moz-border-radius-bottomright: 5px;
+          border-bottom-right-radius: 5px;
+}
+
+
+// Split button dropdowns
+// ----------------------
+
+// Give the line between buttons some depth
+.btn-group > .btn.dropdown-toggle {
+  padding: 8px 24px;
+  margin-right:7px;
+  font-size: $baseFontSize + 2px;
+  *padding-top: 6px;
+  *padding-bottom: 6px;
+}
+.btn-group > .btn-mini.dropdown-toggle {
+  padding: 2px 12px;
+  margin-right:1px;
+  font-size: $baseFontSize - 2px;
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+
+}
+.btn-group > .btn-small.dropdown-toggle {
+  padding: 5px 17px;
+  margin-right:3px;
+  font-size: $baseFontSize - 1px;
+  *padding-top: 5px;
+  *padding-bottom: 5px;
+}
+.btn-group > .btn-large.dropdown-toggle {
+  padding: 14px 42px;
+  margin-right:15px;
+  font-size: 21px;
+  *padding-top: 11px;
+  *padding-bottom: 11px;
+}
+
+
+// Reposition the caret
+.btn .caret {
+  margin-top: 7px;
+}
+.btn-mini .caret {
+  margin-top: 5px;
+}
+.btn-small .caret {
+  margin-top: 6px;
+}
+.btn-large .caret {
+  margin-top: 9px;
+}
