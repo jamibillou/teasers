@@ -6,6 +6,6 @@ Teasers::Application.routes.draw do
   match 'signup', to: 'pages#signup'
 
   # Dynamic root_path
-  root to: 'pages#join',   constraints: Signup.new(false)
-  root to: 'pages#signup', constraints: Signup.new(true) 
+  root to: 'pages#join'#,   constraints: Signup.new(false)
+  #root to: 'pages#signup', constraints: Signup.new(true) 
 end
