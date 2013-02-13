@@ -1,0 +1,25 @@
+# https://github.com/github/gitignore/blob/master/Rails.gitignore
+
+*.rbc
+*.sassc
+.sass-cache
+.rspec
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+
+
+# Ours
+
+.rvmrc
+.DS_Store
+/config/database.yml
+/public/uploads/*
+.powrc
