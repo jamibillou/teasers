@@ -6,3 +6,5 @@ fr:
       download: 'Télécharger'
     signup:
       title: 'Votre CV revu et corrigé par une communauté de professionnels'
+      subtitle: "Des conseils pertinents vous permettant d'améliorer votre CV et de décrocher des entretiens"
+      signup: "S'inscrire"
