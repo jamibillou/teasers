@@ -2,3 +2,7 @@ fr:
   pages:
     join:
       title: 'Des CV réalises par des professionnels du recrutement'
+      subtitle: 'Vous voulez donner un coup de jeune à votre CV, et augmenter vos chances de décrocher un entretien ?'
+      download: 'Télécharger'
+    signup:
+      title: 'Votre CV revu et corrigé par une communauté de professionnels'
