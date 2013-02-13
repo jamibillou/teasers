@@ -72,6 +72,7 @@ GEM
     mime-types (1.21)
     multi_json (1.6.0)
     netrc (0.7.7)
+    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -132,6 +133,7 @@ DEPENDENCIES
   haml
   heroku
   jquery-rails
+  pg
   rails (= 3.2.12)
   sass-rails
   uglifier
