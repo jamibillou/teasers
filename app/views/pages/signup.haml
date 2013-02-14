@@ -12,3 +12,5 @@
 		%h2=t 'pages.signup.subtitle'
 	.span3
 		%a.btn.btn-large.btn-primary.pull-right{href: '#'}=t 'pages.signup.signup'
+
+= mixpanel_call('track', 'Viewed teaser page', "{'Teaser version': 'feedback'}")
