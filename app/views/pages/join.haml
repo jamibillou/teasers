@@ -4,8 +4,8 @@
 
 .row-fluid#images
 	.span6#certified
-		/ = image_tag 'certified.jpg', alt: 'certified', id: 'certified-logo'
 		%h2=t 'pages.join.partners'
+		.visible-phone= image_tag 'cvs.jpg', alt: 'cvs'
 		%p=t 'pages.join.partners_description_html'
 		#partners
 			.partner
@@ -17,21 +17,23 @@
 			.partner.last
 				= image_tag 'tristan.jpg',	 alt: 'T.Rousselle'
 				%h5 T.Rousselle
-			.partner
+			.partner.hidden-phone
 				= image_tag 'arrow.jpg',		 alt: 'arrow'
-	.span6#cvs
+	.span6.hidden-phone#cvs
 		= image_tag 'cvs.jpg', alt: 'cvs'
 
 .row-fluid#cta
 	.span12
 		=t 'pages.join.cta'
-		%a.btn.btn-primary{href: '#'}=t 'pages.join.cta_button'
+		%a.btn.btn-large.btn-primary.hidden-phone{href: '#'}=t 'pages.join.cta_button'
+		%a.btn.btn-primary.visible-phone{href: '#'}=t 'pages.join.cta_button'
 
 %footer
 	.container
 		.row-fluid
 			.span4
-				%h3=t 'pages.join.follow'
+				.hidden-phone
+					%h3=t 'pages.join.follow'
 				.social-links
 					%a{href: 'http://twitter.com/joblr_co', target: 'blank'}
 						.icon-twitter
@@ -39,7 +41,7 @@
 						.icon-linkedin
 					%a{href: 'http://fb.me/joblr.co', target: 'blank'}
 						.icon-facebook
-			.span8#about-us
+			.span8#about-us.hidden-phone
 				%h3=t 'pages.join.about_us'
 				%p=t 'pages.join.about_us_description_html'
 
