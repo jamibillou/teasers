@@ -4,15 +4,28 @@
 
 .row-fluid#images
 	.span6#certified
-		= image_tag 'certified.jpg', alt: 'certified', id: 'certified-logo'
+		/ = image_tag 'certified.jpg', alt: 'certified', id: 'certified-logo'
 		%h2=t 'pages.join.partners'
 		%p=t 'pages.join.partners_description_html'
-		= image_tag 'partners.jpg', alt: 'partners'
+		#partners
+			.partner
+				= image_tag 'guillaume.jpg', alt: 'G.Masuit'
+				%h5 G.Masuit
+			.partner
+				= image_tag 'delphine.jpg',  alt: 'D.Pau'
+				%h5 D.Pau
+			.partner.last
+				= image_tag 'tristan.jpg',	 alt: 'T.Rousselle'
+				%h5 T.Rousselle
+			.partner
+				= image_tag 'arrow.jpg',		 alt: 'arrow'
 	.span6#cvs
+		= image_tag 'cvs.jpg', alt: 'cvs'
 
 .row-fluid#cta
 	.span12
 		=t 'pages.join.cta'
+		%a.btn.btn-primary{href: '#'}=t 'pages.join.cta_button'
 
 %footer
 	.container
