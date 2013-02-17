@@ -1,13 +1,33 @@
-.row-fluid
-	.span6
-		%h1=t 'pages.join.title'
-	.span6
+.row-fluid#value_prop
 	.span12
-		%hr/
-.row-fluid
-	.span8
-		%h2=t 'pages.join.subtitle'
-	.span4
-		%a.btn.btn-large.btn-primary.pull-right{href: '#'}=t 'pages.join.download'
+		%h1=t 'pages.join.title'
+
+.row-fluid#images
+	.span6#certified
+		= image_tag 'certified.jpg', alt: 'certified', id: 'certified-logo'
+		%h2=t 'pages.join.partners'
+		%p=t 'pages.join.partners_description_html'
+		= image_tag 'partners.jpg', alt: 'partners'
+	.span6#cvs
+
+.row-fluid#cta
+	.span12
+		=t 'pages.join.cta'
+
+%footer
+	.container
+		.row-fluid
+			.span4
+				%h3=t 'pages.join.follow'
+				.social-links
+					%a{href: 'http://twitter.com/joblr_co', target: 'blank'}
+						.icon-twitter
+					%a{href: 'http://linkedin.com/company/joblr', target: 'blank'}
+						.icon-linkedin
+					%a{href: 'http://fb.me/joblr.co', target: 'blank'}
+						.icon-facebook
+			.span8#about-us
+				%h3=t 'pages.join.about_us'
+				%p=t 'pages.join.about_us_description_html'
 
 = mixpanel_call('track', 'Viewed teaser page', "{'Teaser version': 'templates'}")

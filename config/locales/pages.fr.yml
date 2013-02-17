@@ -1,9 +1,23 @@
 fr:
   pages:
     join:
-      title: 'Des CV réalises par des professionnels du recrutement'
+      title: 'Votre modèle de CV, réalisé par des professionnels du recrutement'
       subtitle: 'Vous voulez donner un coup de jeune à votre CV, et augmenter vos chances de décrocher un entretien ?'
       download: 'Télécharger'
+      partners: 'Partenaires de votre réussite'
+      partners_description_html: >
+        Nous travaillons avec de nombreux
+        <br/>professionnels des ressources humaines,
+        <br/>recruteurs et directeurs d'entreprise pour créer
+        <br/>le CV qui vous aidera à décrocher votre
+        <br/>prochain job.
+      cta: 'Découvrez notre collection, téléchargez le CV de votre choix, et'
+      follow: 'Follow Joblr'
+      about_us: 'About us'
+      about_us_description_html: >
+        Donec id elit non mi porta gravida at eget metus. Nullam id
+        <br/>dolor id nibh ultricies vehicula ut id elit. Fusce dapibus,
+        <br/>tellus ac cursus commodo, tortor mauris condimentum nibh.
     signup:
       title: 'Votre CV revu et corrigé par une communauté de professionnels'
       subtitle: "Des conseils pertinents vous permettant d'améliorer votre CV et de décrocher des entretiens"
