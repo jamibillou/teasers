@@ -7,6 +7,28 @@ module ApplicationHelper
   # Analytics
   # ---------
 
+  def analytics_init
+    if request.subdomain.present? && request.subdomain.match(/^join$/)
+      ga_init(4)
+    elsif request.subdomain.present? && request.subdomain.match(/^signup$/)
+      ga_init(5)
+    end
+  end  
+
+  def ga_init(id)
+    content_tag(:script, type: 'text/javascript') do
+      "var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-34334309-#{id}']);
+       _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      ".html_safe
+    end
+  end
+
   def mixpanel_init	
     content_tag(:script, type: 'text/javascript') do
       "(function(e,b){
@@ -44,6 +66,6 @@ module ApplicationHelper
   end
 
   def mixpanel_call(action, value, properties = nil)
-    content_tag(:script, type: 'text/javascript') {"mixpanel.#{action}('#{value}'#{', '+properties if properties});".html_safe} if Rails.env.production? || Rails.env.test?
+    content_tag(:script, type: 'text/javascript') {"mixpanel.#{action}('#{value}'#{', '+properties if properties});".html_safe}
   end
 end

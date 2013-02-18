@@ -6,10 +6,6 @@ gem 'haml'
 gem 'pg'
 gem 'jquery-rails'
 
-group :production do
-  gem 'google-analytics-rails'
-end
-
 group :development do
   gem 'heroku'
 end

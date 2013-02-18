@@ -25,8 +25,7 @@ en:
           Thank you for your interest in Joblr.
           <br/>The application is not completely developed yet. If you want to be in touch with of
           the production launch, please type your email in the field below.
-          <br/>We promise not to spam your mailbox.
-          <br/>
+        no_spam: 'We promise not to spam your mailbox.'
         placeholder: 'Type your email address'
     signup:
       title: 'CV reviews from a community of certified hiring professionals'
