@@ -4,10 +4,10 @@
 
 .row-fluid#images
 	.span6#certified
-		%h2=t 'pages.join.partners'
 		.visible-phone= image_tag 'cvs.jpg', alt: 'cvs'
-		%p=t 'pages.join.partners_description_html'
 		#partners
+			%h2=t 'pages.join.partners'
+			%p=t 'pages.join.partners_description_html'
 			.partner
 				= image_tag 'guillaume.jpg', alt: 'G.Masuit'
 				%h5 G.Masuit
@@ -24,7 +24,7 @@
 
 .row-fluid#cta
 	.span12
-		=t 'pages.join.cta'
+		.cta-text=t 'pages.join.cta'
 		%a.btn.btn-large.btn-primary.hidden-phone{href: '#'}=t 'pages.join.cta_button'
 		%a.btn.btn-primary.visible-phone{href: '#'}=t 'pages.join.cta_button'
 
