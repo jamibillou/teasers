@@ -23,6 +23,13 @@ fr:
         pour discuter ensemble de votre recherche d'emploi.
       notif_modal: 
         title: 'Information'
+        explain_html: >
+          Nous vous remercions de l'intérêt porté à Joblr.
+          <br/>Le produit est actuellement en cours de développement. Si vous souhaitez être tenu
+          informé(e) de l'évolution et du lancement prochain, saisissez votre adresse email dans le champ ci dessous.
+          <br/>Nous nous engageons à ne pas polluer votre boîte mail.
+          <br/>
+        placeholder: 'Saisissez votre adresse email'
     signup:
       title: 'Votre CV revu et corrigé par une communauté de professionnels'
       subtitle: "Des conseils pertinents vous permettant d'améliorer votre CV et de décrocher des entretiens"

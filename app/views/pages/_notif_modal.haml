@@ -3,3 +3,8 @@
     %a.close.hidden-phone{href: '#', 'data-dismiss' => 'modal'} &times;
     %h3=t 'pages.join.notif_modal.title'
   .modal-body
+    =t 'pages.join.notif_modal.explain_html'
+    %form{action: 'http://engaccino.us4.list-manage.com/subscribe/post?u=41a2365cedfbb414d63edd7bf&amp;id=e011320e3b', method: 'post', id: 'mc-embedded-subscribe-form', name: 'mc-embedded-subscribe-form', target: '_blank'}
+      %input{type: 'email',  name: 'EMAIL',     id: 'mce-EAMIL', placeholder: "#{t 'pages.join.notif_modal.placeholder'}"}
+      %br/
+      %input{type: 'submit', name: 'subscribe', id: 'mc-embedded-subscribe', class: 'btn btn-primary'}

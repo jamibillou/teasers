@@ -21,6 +21,13 @@ en:
         <br/>hesitate to <a href:'mailto:team@joblr.co'>contact us</a> to talk about your job hunt.
       notif_modal: 
         title: 'Notification'
+        explain_html: >
+          Thank you for your interest in Joblr.
+          <br/>The application is not completely developed yet. If you want to be in touch with of
+          the production launch, please type your email in the field below.
+          <br/>We promise not to spam your mailbox.
+          <br/>
+        placeholder: 'Type your email address'
     signup:
       title: 'CV reviews from a community of certified hiring professionals'
       subtitle: 'Get feedbacks from recruiters, and raise your odds to get interviews'
