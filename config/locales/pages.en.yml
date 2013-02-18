@@ -12,13 +12,16 @@ en:
         <br/>le CV qui vous aidera à décrocher votre
         <br/>prochain job.
       cta: 'Découvrez notre collection, téléchargez le CV de votre choix, et'
-      cta_button: "c'est parti !"
+      cta_button: "Here we go!"
+      cta_title: 'Download your CV!'
       follow: 'Follow Joblr'
       about_us: 'About us'
       about_us_description_html: >
         Donec id elit non mi porta gravida at eget metus. Nullam id
         <br/>dolor id nibh ultricies vehicula ut id elit. Fusce dapibus,
         <br/>tellus ac cursus commodo, tortor mauris condimentum nibh.
+      notif_modal: 
+        title: 'Notification'
     signup:
       title: 'CV reviews from a community of certified hiring professionals'
       subtitle: 'Get feedbacks from recruiters, and raise your odds to get interviews'

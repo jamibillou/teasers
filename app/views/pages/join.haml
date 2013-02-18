@@ -25,8 +25,10 @@
 .row-fluid#cta
 	.span12
 		.cta-text=t 'pages.join.cta'
-		%a.btn.btn-large.btn-primary.hidden-phone{href: '#'}=t 'pages.join.cta_button'
-		%a.btn.btn-primary.visible-phone{href: '#'}=t 'pages.join.cta_button'
+		.btn.btn-large.btn-primary.hidden-phone{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.join.cta_title')}
+			=t 'pages.join.cta_button'
+		.btn.btn-primary.visible-phone{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.join.cta_title')}
+			=t 'pages.join.cta_button'
 
 %footer
 	.container
@@ -44,5 +46,7 @@
 			.span8#about-us.hidden-phone
 				%h3=t 'pages.join.about_us'
 				%p=t 'pages.join.about_us_description_html'
+
+= render 'notif_modal'
 
 = mixpanel_call('track', 'Viewed teaser page', "{'Teaser version': 'templates'}")
