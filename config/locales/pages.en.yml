@@ -4,22 +4,21 @@ en:
       title: 'Resume templates created by certified hiring professionals'
       subtitle: 'Want to increase the potential of your CV, and raise your odds to get an interview?'
       download: 'Download'
-      partners: 'Partenaires de votre réussite'
+      partners: 'Partners of your success'
       partners_description_html: >
-        Nous travaillons avec de nombreux
-        <br/>professionnels des ressources humaines,
-        <br/>recruteurs et directeurs d'entreprise pour créer
-        <br/>le CV qui vous aidera à décrocher votre
-        <br/>prochain job.
-      cta: 'Découvrez notre collection, téléchargez le CV de votre choix, et'
+        We work in collaboration with many
+        <br/>human resources professionals, recruiters
+        <br/>and CEOs to help you creating
+        <br/>the best CV and finding your next job.
+      cta: 'Explore our collection and download the CV you want'
       cta_button: "Here we go!"
       cta_title: 'Download your CV!'
       follow: 'Follow Joblr'
       about_us: 'About us'
       about_us_description_html: >
-        Donec id elit non mi porta gravida at eget metus. Nullam id
-        <br/>dolor id nibh ultricies vehicula ut id elit. Fusce dapibus,
-        <br/>tellus ac cursus commodo, tortor mauris condimentum nibh.
+        Joblr is a startup focusing on helping job seekers.
+        <br/>We are consistently working with candidates, don't
+        <br/>hesitate to <a href:'mailto:team@joblr.co'>contact us</a> to talk about your job hunt.
       notif_modal: 
         title: 'Notification'
     signup:

@@ -14,12 +14,13 @@ fr:
       cta: 'Découvrez notre collection et téléchargez le CV de votre choix'
       cta_button: "C'est parti !"
       cta_title: 'Téléchargez votre CV !'
-      follow: 'Follow Joblr'
-      about_us: 'About us'
+      follow: 'Suivez Joblr'
+      about_us: 'Qui sommes-nous ?'
       about_us_description_html: >
-        Donec id elit non mi porta gravida at eget metus. Nullam id
-        <br/>dolor id nibh ultricies vehicula ut id elit. Fusce dapibus,
-        <br/>tellus ac cursus commodo, tortor mauris condimentum nibh.
+        Joblr est une startup ayant pour vocation l'aide aux chercheurs
+        <br/>d'emploi. Nous sommes constamment à votre écoute, n'hésitez pas
+        <br/>à <a href='mailto:team@joblr.co'>nous contacter</a>
+        pour discuter ensemble de votre recherche d'emploi.
       notif_modal: 
         title: 'Information'
     signup:
