@@ -1,3 +1,12 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+$ ->
+
+	# Mixpanel calls for CTA buttons
+	# ------------------------------
+
+	$('.cta-join').each -> $(@).click -> mixpanelEvent('CV Templates')
+
+
+# Calls the Mixpanel event
+# ------------------------
+
+mixpanelEvent = (teaser) -> mixpanel.track('Clicked CTA', {'teaser name' : teaser})
