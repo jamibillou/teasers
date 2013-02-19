@@ -1,5 +1,11 @@
 $ ->
 
+  # Placeholders
+  # ------------
+
+  $('#submit-placeholder').click -> $('#hidden-submit').click()
+  
+
 	# Mixpanel calls for CTA buttons
 	# ------------------------------
 

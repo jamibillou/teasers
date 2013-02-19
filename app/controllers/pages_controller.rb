@@ -6,6 +6,7 @@ class PagesController < ApplicationController
 
 	def join
 		@title = t('pages.join.title')
+		@newsletter = Newsletter.new
 	end
 
 	def signup
@@ -18,8 +19,8 @@ class PagesController < ApplicationController
 	  	session = GoogleDrive.login('francksabattier@gmail.com','13JamirO10')
 	  	ws = session.spreadsheet_by_key('0Anvdw7Lk3scOdG5mdEJwR0xNLVBTbzI5MnM0T2dKdkE').worksheets[0]
 
-	  	ws[2,1] = 'loubi@gmail.com'
-	  	ws[2,2] = Time.now.strftime('%d/%m/%Y')
+	  	ws[2,1] = Time.now.strftime('%d/%m/%Y')
+	  	ws[2,2] = 'franck.sabattier@gmail.com'
 	  	ws.save()
 	  end
 end

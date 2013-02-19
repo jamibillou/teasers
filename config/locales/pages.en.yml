@@ -27,6 +27,7 @@ en:
           the production launch, please type your email in the field below.
         no_spam: 'We promise not to spam your mailbox.'
         placeholder: 'Type your email address'
+        submit: 'Submit'
     signup:
       title: 'CV reviews from a community of certified hiring professionals'
       subtitle: 'Get feedbacks from recruiters, and raise your odds to get interviews'

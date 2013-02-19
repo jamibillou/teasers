@@ -29,6 +29,7 @@ fr:
           <br/>Si vous souhaitez être tenu informé(e) de l'évolution et du lancement prochain, saisissez votre adresse email dans le champ ci dessous.
         no_spam: 'Nous nous engageons à ne pas polluer votre boîte mail.'
         placeholder: 'Saisissez votre adresse email'
+        submit: 'Valider'
     signup:
       title: 'Votre CV revu et corrigé par une communauté de professionnels'
       subtitle: "Des conseils pertinents vous permettant d'améliorer votre CV et de décrocher des entretiens"
