@@ -5,6 +5,7 @@ gem 'rails', '3.2.12'
 gem 'haml'
 gem 'pg'
 gem 'jquery-rails'
+gem 'google_drive'
 
 group :development do
   gem 'heroku'
