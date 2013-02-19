@@ -4,9 +4,11 @@
     %h3=t 'pages.join.notif_modal.title'
   .modal-body
     =t 'pages.join.notif_modal.explain_html'
-    =form_for @newsletter do |f|
+    =form_for @newsletter, remote: true do |f|
       %br/
       = f.text_field :email, type: 'email', placeholder: t('pages.join.notif_modal.placeholder')
+      %span#loader= image_tag 'loader.gif'
+      %span#feedback-message
       %br/
       %small=t 'pages.join.notif_modal.no_spam'
       %br/
