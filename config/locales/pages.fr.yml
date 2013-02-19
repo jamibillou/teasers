@@ -3,12 +3,9 @@ fr:
     follow: 'Suivez Joblr'
     about_us: 'Qui sommes-nous ?'
     about_us_description_html: >
-      Joblr est une startup ayant pour vocation l'aide aux chercheurs
-      <br/>d'emploi. Nous sommes constamment à votre écoute, n'hésitez pas
-      <br/>à <a href='mailto:team@joblr.co'>nous contacter</a>
-      pour discuter ensemble de votre recherche d'emploi.
+      Joblr a pour vocation de vous aider dans votre recherche d'emploi. N'hésitez pas à nous <a href='mailto:team@joblr.co'>contacter</a> directement pour parler de votre situation et essayer ensemble de la débloquer.
     join:
-      title: 'Votre modèle de CV, réalisé par des professionnels du recrutement'
+      title: 'Votre CV et lettre de motivation, réalisés par des professionnels'
       download: 'Télécharger'
       partners: 'Partenaires de votre réussite'
       partners_description_html: >
@@ -17,25 +14,22 @@ fr:
         <br/>recruteurs et directeurs d'entreprise pour créer
         <br/>le CV qui vous aidera à décrocher votre
         <br/>prochain job.
-      cta: 'Découvrez notre collection et téléchargez le CV de votre choix'
-      cta_button: "C'est parti !"
+      cta: 'Choisissez et téléchargez le modèle de votre choix parmi'
+      cta_button: "notre collection"
       cta_title: 'Téléchargez votre CV !'
-      notif_modal: 
-        title: 'Information'
-        explain_html: >
-          Nous vous remercions de l'intérêt porté à Joblr.
-          <br/>Le produit est actuellement en cours de développement. 
-          <br/>Si vous souhaitez être tenu informé(e) de l'évolution et du lancement prochain, saisissez votre adresse email dans le champ ci dessous.
-        no_spam: 'Nous nous engageons à ne pas polluer votre boîte mail.'
-        placeholder: 'Saisissez votre adresse email'
-        submit: 'Valider'
+      notif_modal:
+        explain: 'Nous vous remercions de votre intérêt pour Joblr. Le site est encore en cours de développement mais nous vous tiendrons informé(e) dés le lancement !'
+        fill_in: 'Saisissez votre adresse email :'
+        placeholder: 'Votre adresse email'
+        submit: 'OK'
+        team: "L'équipe Joblr"
     signup:
-      title: 'Votre CV et lettre revus et corrigés par des professionnels'      
+      title: 'Votre CV et lettre revus et corrigés par des professionnels'
       community_html: >
-        Looking for work is a huge task and not knowing what you’re doing wrong is painful. 
-        For that reason we have gathered a community of hire professionals, recruiters, company 
+        Looking for work is a huge task and not knowing what you’re doing wrong is painful.
+        For that reason we have gathered a community of hire professionals, recruiters, company
         owners that are willing to help you with your CV and letter.
-      community2_html: >  
+      community2_html: >
         means that we certify that every expert helping you on Joblr
         is qualified to do so. Their experience and current activity are key.
       cta: 'Upload your material and an expert will provide you personalized feedback within 48hrs'

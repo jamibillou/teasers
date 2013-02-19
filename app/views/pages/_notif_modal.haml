@@ -1,16 +1,24 @@
 #notif-modal.modal.hide
-  .modal-header
-    %a.close.hidden-phone{href: '#', 'data-dismiss' => 'modal'} &times;
-    %h3=t 'pages.join.notif_modal.title'
   .modal-body
-    =t 'pages.join.notif_modal.explain_html'
-    =form_for @newsletter, remote: true do |f|
+    %p
+      =t 'pages.join.notif_modal.explain'
       %br/
-      = f.text_field :email, type: 'email', placeholder: t('pages.join.notif_modal.placeholder')
+      %br/
+      =t 'pages.join.notif_modal.fill_in'
+    = form_for @newsletter, remote: true do |f|
+      .input-append
+        = f.text_field :email, type: 'email', placeholder: t('pages.join.notif_modal.placeholder')
+        %button#submit-placeholder.btn.btn-primary{type: 'button'}=t 'pages.join.notif_modal.submit'
       %span#loader= image_tag 'loader.gif'
       %span#feedback-message
-      %br/
-      %small=t 'pages.join.notif_modal.no_spam'
-      %br/
-      %a#submit-placeholder.btn.btn-primary=t 'pages.join.notif_modal.submit'
       .hidden= f.submit t('pages.join.notif_modal.submit'), id: 'hidden-submit'
+    %p.team=t 'pages.join.notif_modal.team'
+    #images
+      #partners
+        .partner
+          = image_tag 'franck.jpg',  alt: 'F. Sabattier'
+          %h5 F. Sabattier
+        .partner.last
+          = image_tag 'dominic.jpg',   alt: 'D. Matheron'
+          %h5 D. Matheron
+

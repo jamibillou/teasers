@@ -3,38 +3,33 @@ en:
     follow: 'Follow Joblr'
     about_us: 'About us'
     about_us_description_html: >
-      Joblr is a startup focusing on helping job seekers.
-      <br/>We are consistently working with candidates, don't
-      <br/>hesitate to <a href:'mailto:team@joblr.co'>contact us</a> to talk about your job hunt.
+      Joblr dedicates to helping you in your job search. Don't hesitate to <a href:'mailto:team@joblr.co'>contact us</a> to talk about your own situation and try to boost it together.
     join:
-      title: 'Resume templates created by certified hiring professionals'
+      title: 'Resume & cover letter templates created by professionals'
       download: 'Download'
-      partners: 'Partners of your success'
+      partners: 'Partnering for your success'
       partners_description_html: >
-        We work in collaboration with many
-        <br/>human resources professionals, recruiters
-        <br/>and CEOs to help you creating
-        <br/>the best CV and finding your next job.
-      cta: 'Explore our collection and download the CV you want'
-      cta_button: "Here we go!"
+        We work in together with human
+        <br/>resources professionals, recruiters
+        <br/>and business owners to help you create
+        <br/>the best CV and find your next job.
+      cta: 'Choose and download the template you prefer out of'
+      cta_button: "our selection"
       cta_title: 'Download your CV!'
-      notif_modal: 
-        title: 'Notification'
-        explain_html: >
-          Thank you for your interest in Joblr.
-          <br/>The application is not completely developed yet. If you want to be in touch with of
-          the production launch, please type your email in the field below.
-        no_spam: 'We promise not to spam your mailbox.'
-        placeholder: 'Type your email address'
-        submit: 'Submit'
+      notif_modal:
+        explain: 'Thank you for your interest in Joblr. The application is not completely developed yet. If you want to be in touch with of the production launch, please type your email in the field below.'
+        fill_in: 'Fill in your email address:'
+        placeholder: 'Your email address'
+        submit: 'OK'
+        team: "The Joblr team"
     signup:
       title: 'Get your CV & letter checked by professionals'
       community_title: 'Community of experts'
       community_html: >
-        Looking for work is a huge task and not knowing what you’re doing wrong is painful. 
-        For that reason we have gathered a community of hire professionals, recruiters, company 
+        Looking for work is a huge task and not knowing what you’re doing wrong is painful.
+        For that reason we have gathered a community of hire professionals, recruiters, company
         owners that are willing to help you with your CV and letter.<br/>
-      community2_html: >  
+      community2_html: >
         means that we certify that every expert helping you on Joblr
         is qualified to do so. Their experience and current activity are key.
       cta: 'Upload your material and an expert will provide you personalized feedback within 48hrs'

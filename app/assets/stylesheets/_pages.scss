@@ -61,7 +61,7 @@
 	  	p{
 	  		margin-top:15px;
 	  		font-size:16px;
-				line-height:23px;	
+				line-height:23px;
 	  	}
     }
  	}
@@ -71,6 +71,7 @@
 			display:table-cell;
 			padding-right:30px;
 			h5{
+        margin-top:3px;
 				text-align:center;
 			}
 			.last{
@@ -80,7 +81,7 @@
     	@media (min-width:768px) and (max-width: 979px) {
     		h5{
   				font-size:11px;
-  			}	
+  			}
     		img{
     			max-width:60px;
     			max-height:60px;
@@ -189,11 +190,31 @@ footer{
     }
 	}
 	// tablet and phone
-  @media (max-width: 979px) {	
+  @media (max-width: 979px) {
   	margin-top: -90px;
   }
   // phone
 	@media (max-width: 767px) {
 		padding-bottom: 40px;
 	}
+}
+
+#notif-modal{
+  padding:25px;
+  font-weight:100;
+  p{
+    font-size:18px;
+    line-height:26px;
+  }
+  input{
+    height:28px;
+  }
+  p.team{
+    margin:42px 0 8px 0;
+    font-size:16px;
+    font-style:italic;
+  }
+  #images{
+    margin-top:0;
+  }
 }
