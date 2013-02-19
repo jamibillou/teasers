@@ -26,7 +26,7 @@ class NewslettersController < ApplicationController
 	  	if request.subdomain.match(/^join$/)
 				session.spreadsheet_by_key('0Anvdw7Lk3scOdG5mdEJwR0xNLVBTbzI5MnM0T2dKdkE').worksheets[0]
 	  	elsif request.subdomain.match(/^signup$/)
-	  		session.spreadsheet_by_key('0Anvdw7Lk3scOdG5mdEJwR0xNLVBTbzI5MnM0T2dKdkE').worksheets[0]
+	  		session.spreadsheet_by_key('0Anvdw7Lk3scOdF9qbEVxODZRNVE3N3YzLUlyTlpDelE').worksheets[0]
 	  	end
 	  end
 end

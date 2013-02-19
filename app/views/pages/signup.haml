@@ -37,6 +37,7 @@
 				%h3=t 'pages.about_us'
 				%p=t 'pages.about_us_description_html'
 
+= render 'notif_modal'
+
 - if Rails.env.production?
-	= ga_init('5')
 	= mixpanel_call('track', 'Viewed teaser page', "{'Teaser version': 'feedback'}")

@@ -7,6 +7,6 @@ class PagesController < ApplicationController
 
 	def signup
 		@title = t('pages.signup.title')
+		@newsletter = Newsletter.new
 	end
-
 end
