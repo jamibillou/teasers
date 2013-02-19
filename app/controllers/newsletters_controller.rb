@@ -16,7 +16,6 @@ class NewslettersController < ApplicationController
 
 	  def write_excel
 	  	ws = get_worksheet()
-	  	
 	  	ws[Newsletter.count+1,1] = @newsletter.email
 	  	ws[Newsletter.count+1,2] = Time.now.strftime('%d/%m/%Y')
 	  	ws.save()

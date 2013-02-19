@@ -1,17 +1,41 @@
-.row-fluid
-	.span4
-	.span4
-		%h1=t 'pages.signup.title'
-	.span4
-
-.row-fluid
+.row-fluid#value_prop
 	.span12
+		%h1=t 'pages.signup.title'
 
-.row-fluid
+.row-fluid#community
 	.span9
-		%h2=t 'pages.signup.subtitle'
-	.span3
-		%a.btn.btn-large.btn-primary.pull-right{href: '#'}=t 'pages.signup.signup'
+		= image_tag 'community.jpg'
+	.span3#experts
+		%h2=t 'pages.signup.community_title'
+		=t 'pages.signup.community_html'
+		#description
+			= image_tag 'certified_small.jpg'
+			=t 'pages.signup.community2_html'
+
+.row-fluid#cta
+	.span12
+		.cta-text=t 'pages.signup.cta'
+		.btn.btn-large.btn-primary.hidden-phone.cta-join{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.signup.cta_title')}
+			=t 'pages.signup.cta_button'
+		.btn.btn-primary.visible-phone.cta-join{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.signup.cta_title')}
+			=t 'pages.signup.cta_button'
+
+%footer
+	.container
+		.row-fluid
+			.span4
+				.hidden-phone
+					%h3=t 'pages.follow'
+				.social-links
+					%a{href: 'http://twitter.com/joblr_co', target: 'blank'}
+						.icon-twitter
+					%a{href: 'http://linkedin.com/company/joblr', target: 'blank'}
+						.icon-linkedin
+					%a{href: 'http://fb.me/joblr.co', target: 'blank'}
+						.icon-facebook
+			.span8#about-us.hidden-phone
+				%h3=t 'pages.about_us'
+				%p=t 'pages.about_us_description_html'
 
 - if Rails.env.production?
 	= ga_init('5')

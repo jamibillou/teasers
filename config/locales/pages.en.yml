@@ -1,8 +1,13 @@
 en:
   pages:
+    follow: 'Follow Joblr'
+    about_us: 'About us'
+    about_us_description_html: >
+      Joblr is a startup focusing on helping job seekers.
+      <br/>We are consistently working with candidates, don't
+      <br/>hesitate to <a href:'mailto:team@joblr.co'>contact us</a> to talk about your job hunt.
     join:
       title: 'Resume templates created by certified hiring professionals'
-      subtitle: 'Want to increase the potential of your CV, and raise your odds to get an interview?'
       download: 'Download'
       partners: 'Partners of your success'
       partners_description_html: >
@@ -13,12 +18,6 @@ en:
       cta: 'Explore our collection and download the CV you want'
       cta_button: "Here we go!"
       cta_title: 'Download your CV!'
-      follow: 'Follow Joblr'
-      about_us: 'About us'
-      about_us_description_html: >
-        Joblr is a startup focusing on helping job seekers.
-        <br/>We are consistently working with candidates, don't
-        <br/>hesitate to <a href:'mailto:team@joblr.co'>contact us</a> to talk about your job hunt.
       notif_modal: 
         title: 'Notification'
         explain_html: >
@@ -29,6 +28,14 @@ en:
         placeholder: 'Type your email address'
         submit: 'Submit'
     signup:
-      title: 'CV reviews from a community of certified hiring professionals'
-      subtitle: 'Get feedbacks from recruiters, and raise your odds to get interviews'
-      signup: 'Sign up'
+      title: 'Get your CV & letter checked by professionals'
+      community_title: 'Community of experts'
+      community_html: >
+        Looking for work is a huge task and not knowing what you’re doing wrong is painful. 
+        For that reason we have gathered a community of hire professionals, recruiters, company 
+        owners that are willing to help you with your CV and letter.<br/>
+      community2_html: >  
+        means that we certify that every expert helping you on Joblr
+        is qualified to do so. Their experience and current activity are key.
+      cta: 'Upload your material and an expert will provide you personalized feedback within 48hrs'
+      cta_button: 'Sign up now!'

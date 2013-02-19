@@ -1,8 +1,14 @@
 fr:
   pages:
+    follow: 'Suivez Joblr'
+    about_us: 'Qui sommes-nous ?'
+    about_us_description_html: >
+      Joblr est une startup ayant pour vocation l'aide aux chercheurs
+      <br/>d'emploi. Nous sommes constamment à votre écoute, n'hésitez pas
+      <br/>à <a href='mailto:team@joblr.co'>nous contacter</a>
+      pour discuter ensemble de votre recherche d'emploi.
     join:
       title: 'Votre modèle de CV, réalisé par des professionnels du recrutement'
-      subtitle: 'Vous voulez donner un coup de jeune à votre CV, et augmenter vos chances de décrocher un entretien ?'
       download: 'Télécharger'
       partners: 'Partenaires de votre réussite'
       partners_description_html: >
@@ -14,13 +20,6 @@ fr:
       cta: 'Découvrez notre collection et téléchargez le CV de votre choix'
       cta_button: "C'est parti !"
       cta_title: 'Téléchargez votre CV !'
-      follow: 'Suivez Joblr'
-      about_us: 'Qui sommes-nous ?'
-      about_us_description_html: >
-        Joblr est une startup ayant pour vocation l'aide aux chercheurs
-        <br/>d'emploi. Nous sommes constamment à votre écoute, n'hésitez pas
-        <br/>à <a href='mailto:team@joblr.co'>nous contacter</a>
-        pour discuter ensemble de votre recherche d'emploi.
       notif_modal: 
         title: 'Information'
         explain_html: >
@@ -31,6 +30,13 @@ fr:
         placeholder: 'Saisissez votre adresse email'
         submit: 'Valider'
     signup:
-      title: 'Votre CV revu et corrigé par une communauté de professionnels'
-      subtitle: "Des conseils pertinents vous permettant d'améliorer votre CV et de décrocher des entretiens"
-      signup: "S'inscrire"
+      title: 'Votre CV et lettre revus et corrigés par des professionnels'      
+      community_html: >
+        Looking for work is a huge task and not knowing what you’re doing wrong is painful. 
+        For that reason we have gathered a community of hire professionals, recruiters, company 
+        owners that are willing to help you with your CV and letter.
+      community2_html: >  
+        means that we certify that every expert helping you on Joblr
+        is qualified to do so. Their experience and current activity are key.
+      cta: 'Upload your material and an expert will provide you personalized feedback within 48hrs'
+      cta_button: 'Sign up now!'

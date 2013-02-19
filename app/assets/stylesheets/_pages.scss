@@ -100,11 +100,28 @@
 	}
 }
 
+#community{
+	margin-top: 70px;
+	#experts{
+		background-color:white;
+		padding:10px;
+		text-align:right;
+		h2{
+			text-align:center;
+			font-size:23px;
+			padding-bottom:25px;
+		}
+		#description{
+			margin-top:20px;
+		}
+	}
+}
+
 #cta{
 	.span12{
 		background-color:$white;
 		border:5px solid #78797a;
-		margin-top:50px;
+		margin-top:70px;
 		padding:40px 0;
 		text-align:center;
 		.cta-text{
