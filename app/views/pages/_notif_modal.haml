@@ -9,8 +9,10 @@
       .input-append
         = f.text_field :email, type: 'email', placeholder: t('pages.join.notif_modal.placeholder')
         %button#submit-placeholder.btn.btn-primary{type: 'button'}=t 'pages.join.notif_modal.submit'
-      %span#loader= image_tag 'loader.gif'
-      %span#feedback-message
+        %span#loader= image_tag 'loader.gif'
+      %i.icon-ok#ok
+      %i.icon-remove#error
+      #feedback-message
       .hidden= f.submit t('pages.join.notif_modal.submit'), id: 'hidden-submit'
     %p.team=t 'pages.join.notif_modal.team'
     #images

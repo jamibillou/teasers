@@ -251,7 +251,29 @@ footer{
     font-size:16px;
     font-style:italic;
   }
+  .input-append{
+    display:inline-block;
+  }
   #images{
     margin-top:0;
+  }
+  #loader{
+    img{
+      margin-top:11px;
+    }
+  }
+  #feedback-message{
+    color:red;
+  }
+  i{
+    font-size:20px;
+    display:inline-table;
+    margin-top:14px;
+    &.icon-ok{
+      color:green;
+    }
+    &.icon-remove{
+      color:red;
+    }
   }
 }
