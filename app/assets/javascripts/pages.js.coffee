@@ -1,5 +1,5 @@
 $ ->
-  $('#loader').h()
+  $('#loader').hide()
 
   # Placeholders
   # ------------
