@@ -101,6 +101,12 @@
 
 #community{
   margin-top: 70px;
+  // tablet and phone
+  @media (max-width:979px){
+    #image{
+      width:100%;
+    }
+  }
   #experts{
     background-color:white;
     padding:10px;
@@ -110,7 +116,21 @@
       font-size:23px;
       padding-bottom:25px;
     }
-    //small desktop
+    // big desktop
+    @media (min-width:1201px) {
+      min-height:354px;
+    }
+    // tablet and phone
+    @media (max-width:979px) {
+      text-align:left;
+      width:90%;
+      margin-left:5%;
+      margin-top:50px;
+      h2{
+        padding-bottom:12px;
+      }
+    }
+    // small desktop
     @media (min-width:980px) and (max-width:1200px) {
       h2{
         font-size:18px;
@@ -141,13 +161,14 @@
       margin-left:20px;
     }
     // tablet and phones
-    @media (max-width: 1200px) {
+    @media (max-width:1200px) {
       .btn{
         margin-top:15px;
       }
+      line-height:25px;
     }
     // phone
-    @media (max-width: 767px) {
+    @media (max-width:767px) {
       font-size:18px;
       .btn{
         width:100px;
@@ -182,7 +203,7 @@ footer{
         }
       }
       // phone
-      @media (max-width: 767px) {
+      @media (max-width:767px) {
         text-align: center;
         margin-top:0;
       }
@@ -196,12 +217,22 @@ footer{
     }
   }
   // tablet and phone
-  @media (max-width: 979px) {
+  @media (max-width:979px) {
     margin-top: -90px;
   }
   // phone
-  @media (max-width: 767px) {
+  @media (max-width:767px) {
     padding-bottom: 40px;
+  }
+  &.signup-footer{
+    // small desktop
+    @media (min-width:980px) and (max-width:1200px){
+      margin-top: -90px;
+    }
+    // tablet and phone
+    @media (max-width:979px) {
+      margin-top: -104px;
+    }    
   }
 }
 

@@ -3,7 +3,7 @@
 		%h1=t 'pages.signup.title'
 
 .row-fluid#community
-	.span9
+	.span9#image
 		= image_tag 'community.jpg'
 	.span3#experts
 		%h2=t 'pages.signup.community_title'
@@ -20,7 +20,7 @@
 		.btn.btn-primary.visible-phone.cta-signup{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.signup.cta_title')}
 			=t 'pages.signup.cta_button'
 
-%footer
+%footer.signup-footer
 	.container
 		.row-fluid
 			.span4
