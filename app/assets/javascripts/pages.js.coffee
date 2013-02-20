@@ -1,5 +1,5 @@
 $ ->
-  $('#loader').hide()
+  $('#loader').h()
 
   # Placeholders
   # ------------
@@ -10,8 +10,8 @@ $ ->
   # Mixpanel calls for CTA buttons
   # ------------------------------
 
-  $('.cta-join').each -> $(@).click -> mixpanelEvent('CV Templates')
-
+  $('.cta-join').each   -> $(@).click -> mixpanelEvent('CV Templates')
+  $('.cta-signup').each -> $(@).click -> mixpanelEvent('CV Feedback')
 
   # Newsletter form
   # ---------------
