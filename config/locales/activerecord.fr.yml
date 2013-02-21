@@ -1,0 +1,11 @@
+fr:
+  activerecord:
+    models:
+      newsletters:
+        email: "Adresse email"
+    errors:
+      messages:
+        blank: "doit être rempli"
+        invalid: "est invalide"
+        taken: "déjà utilisé"
+        email_format: "n'est pas au bon format"

@@ -12,7 +12,6 @@
 class Newsletter < ActiveRecord::Base
   attr_accessible :email, :from
 
-  validates :email, email_format: true, uniqueness: { case_sensitive: false }, presence: true
-  validates :from,																														 presence: true
+  validates :email, presence: true, uniqueness: { case_sensitive: false }, email_format: true
 
 end

@@ -32,7 +32,7 @@ $ ->
     $('#loader').hide()
     $('#ok').hide()
     $('#error').show()
-    $('#feedback-message').html('Error').show())
+    $('#feedback-message').html(xhr.responseText).show())
 
 # Calls the Mixpanel event
 # ------------------------
