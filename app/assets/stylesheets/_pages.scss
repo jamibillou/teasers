@@ -216,13 +216,17 @@ footer{
       }
     }
   }
+  // small desktop
+  @media (min-width:980px) and (max-width:1200px) {
+    margin-top:-77px;
+  }
   // tablet and phone
   @media (max-width:979px) {
-    margin-top: -90px;
+    margin-top:-90px;
   }
   // phone
   @media (max-width:767px) {
-    padding-bottom: 40px;
+    padding-bottom:40px;
   }
   &.signup-footer{
     // small desktop
