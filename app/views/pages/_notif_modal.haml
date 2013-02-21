@@ -7,7 +7,8 @@
       =t 'pages.join.notif_modal.fill_in'
     = form_for @newsletter, remote: true do |f|
       .input-append
-        = f.text_field :email, type: 'email', placeholder: t('pages.join.notif_modal.placeholder')
+        = f.text_field   :email, type: 'email', placeholder: t('pages.join.notif_modal.placeholder')
+        = f.hidden_field :from, value: request.subdomain
         %button#submit-placeholder.btn.btn-primary{type: 'button'}=t 'pages.join.notif_modal.submit'
         %span#loader= image_tag 'loader.gif'
       %i.icon-ok#ok
