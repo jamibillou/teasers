@@ -8,12 +8,7 @@ fr:
       title: 'Votre CV et lettre de motivation, réalisés par des professionnels'
       download: 'Télécharger'
       partners: 'Partenaires de votre réussite'
-      partners_description_html: >
-        Nous travaillons avec de nombreux
-        <br/>professionnels des ressources humaines,
-        <br/>recruteurs et directeurs d'entreprise pour créer
-        <br/>le CV qui vous aidera à décrocher votre
-        <br/>prochain job.
+      partners_description: "Nous travaillons avec de nombreux professionnels des ressources humaines, recruteurs et directeurs d'entreprise pour créer le CV et la lettre de motivation qui vous aideront à décrocher votre prochain job."
       cta: 'Choisissez et téléchargez le modèle de votre choix.'
       cta_button: "Voir notre collection"
       cta_title: 'Téléchargez votre CV !'

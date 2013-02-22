@@ -5,7 +5,7 @@ fr:
         email: "Adresse email"
     errors:
       messages:
-        blank: "doit être rempli"
-        invalid: "est invalide"
+        blank: "vide"
+        invalid: "invalide"
         taken: "déjà utilisé"
-        email_format: "n'est pas au bon format"
+        email_format: "au mauvais format"

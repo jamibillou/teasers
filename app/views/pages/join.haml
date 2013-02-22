@@ -3,11 +3,11 @@
 		%h1=t 'pages.join.title'
 
 .row-fluid#images
-	.span6#certified
+	.span5#certified
 		.visible-phone= image_tag 'cvs.jpg', alt: 'cvs'
 		#partners
 			%h2=t 'pages.join.partners'
-			%p=t 'pages.join.partners_description_html'
+			%p=t 'pages.join.partners_description'
 			.partner
 				= image_tag 'guillaume.jpg', alt: 'G. Masuit'
 				%h5 G. Masuit
@@ -19,7 +19,7 @@
 				%h5 T. Rousselle
 			.partner.hidden-phone
 				= image_tag 'arrow.jpg',		 alt: 'arrow'
-	.span6.hidden-phone#cvs
+	.span7.hidden-phone#cvs
 		= image_tag 'cvs.jpg', alt: 'cvs'
 
 .row-fluid#cta
