@@ -1,21 +1,21 @@
 #notif-modal.modal.hide
   .modal-body
     %p
-      =t 'pages.join.notif_modal.explain'
+      =t 'pages.notif_modal.explain'
       %br/
       %br/
-      =t 'pages.join.notif_modal.fill_in'
+      =t 'pages.notif_modal.fill_in'
     = form_for @newsletter, remote: true do |f|
-      .input-append
-        = f.text_field   :email, type: 'email', placeholder: t('pages.join.notif_modal.placeholder')
+      .control-group
         = f.hidden_field :from, value: request.subdomain
-        %button#submit-placeholder.btn.btn-primary{type: 'button'}=t 'pages.join.notif_modal.submit'
-        %span#loader= image_tag 'loader.gif'
-      %i.icon-ok#ok
-      %i.icon-remove#error
-      #feedback-message
-      .hidden= f.submit t('pages.join.notif_modal.submit'), id: 'hidden-submit'
-    %p.team=t 'pages.join.notif_modal.team'
+        .controls
+          .input-append
+            = f.text_field   :email, type: 'email', placeholder: t('pages.notif_modal.placeholder')
+            %button#submit-placeholder.btn.btn-primary{type: 'button'}=t 'pages.notif_modal.submit'
+          %span#loader= image_tag 'loader.gif'
+          %span.help-inline#feedback-message
+      .hidden= f.submit t('pages.notif_modal.submit'), id: 'hidden-submit'
+    %p.team=t 'pages.notif_modal.team'
     #images
       #partners
         .partner

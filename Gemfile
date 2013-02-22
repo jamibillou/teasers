@@ -6,6 +6,7 @@ gem 'haml'
 gem 'pg'
 gem 'jquery-rails'
 gem 'google_drive'
+gem 'i18n-js'
 
 group :development do
   gem 'heroku'

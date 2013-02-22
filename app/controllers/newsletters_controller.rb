@@ -5,7 +5,7 @@ class NewslettersController < ApplicationController
 	def create
 		@newsletter = Newsletter.new params[:newsletter]
 		unless @newsletter.save
-			respond_to {|format| format.html { render :json => error_messages(@newsletter), :status => :unprocessable_entity if request.xhr? }}			
+			respond_to {|format| format.html { render :json => error_messages(@newsletter), :status => :unprocessable_entity if request.xhr? }}
 		else
 			write_excel()
 			respond_to {|format| format.html { render :json => 'OK' if request.xhr? }}

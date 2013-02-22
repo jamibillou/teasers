@@ -14,25 +14,26 @@ fr:
         <br/>recruteurs et directeurs d'entreprise pour créer
         <br/>le CV qui vous aidera à décrocher votre
         <br/>prochain job.
-      cta: 'Choisissez et téléchargez le modèle de votre choix parmi'
-      cta_button: "notre collection"
+      cta: 'Choisissez et téléchargez le modèle de votre choix.'
+      cta_button: "Voir notre collection"
       cta_title: 'Téléchargez votre CV !'
-      notif_modal:
-        explain: 'Nous vous remercions de votre intérêt pour Joblr. Le site est encore en cours de développement mais nous vous tiendrons informé(e) dés le lancement !'
-        fill_in: 'Saisissez votre adresse email :'
-        placeholder: 'Votre adresse email'
-        submit: 'OK'
-        team: "L'équipe Joblr"
     signup:
       title: 'Votre CV et lettre revus et corrigés par des professionnels'
       community_title: "Une communauté d'experts"
       community_html: >
-        La recherche d'emploi est une tâche ardue, et ne pas avoir de retours suite à une candidature ou 
+        La recherche d'emploi est une tâche ardue, et ne pas avoir de retours suite à une candidature ou
         un entretien est frustrant. C'est pour cela que nous sommes en relation avec une communauté de
         directeurs RH, recruteurs ou encore dirigeants prêts à vous aider dans la rédaction de votre CV
         et lettre de motivation.
       community2_html: >
-        indique que chaque expert présent sur Joblr possède une expérience et un profil 
+        indique que chaque expert présent sur Joblr possède une expérience et un profil
         garantissant la qualité du retour qu'il vous effectuera.
       cta: 'Envoyez vos fichiers et un expert vous donnera un retour personnalisé sous 48h'
       cta_button: "S'inscrire !"
+    notif_modal:
+      explain: 'Nous vous remercions de votre intérêt pour Joblr. Le site est encore en cours de développement mais nous vous tiendrons informé(e) dés le lancement !'
+      fill_in: 'Saisissez votre adresse email :'
+      placeholder: 'Votre adresse email'
+      submit: 'OK'
+      team: "L'équipe Joblr"
+      success_message: "Merci !"

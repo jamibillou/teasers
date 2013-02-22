@@ -148,7 +148,7 @@
   .span12{
     background-color:$white;
     border:5px solid #78797a;
-    margin-top:70px;
+    margin-top:60px;
     padding:40px 0;
     text-align:center;
     .cta-text{
@@ -161,7 +161,7 @@
       margin-left:20px;
     }
     // tablet and phones
-    @media (max-width:1200px) {
+    @media (max-width:979px) {
       .btn{
         margin-top:15px;
       }
@@ -216,10 +216,6 @@ footer{
       }
     }
   }
-  // small desktop
-  @media (min-width:980px) and (max-width:1200px) {
-    margin-top:-77px;
-  }
   // tablet and phone
   @media (max-width:979px) {
     margin-top:-90px;
@@ -236,7 +232,7 @@ footer{
     // tablet and phone
     @media (max-width:979px) {
       margin-top: -104px;
-    }    
+    }
   }
 }
 
@@ -257,27 +253,11 @@ footer{
   }
   .input-append{
     display:inline-block;
+    .btn{
+      @include border-radius(0 3px 3px 0);
+    }
   }
   #images{
     margin-top:0;
-  }
-  #loader{
-    img{
-      margin-top:11px;
-    }
-  }
-  #feedback-message{
-    color:red;
-  }
-  i{
-    font-size:20px;
-    display:inline-table;
-    margin-top:14px;
-    &.icon-ok{
-      color:green;
-    }
-    &.icon-remove{
-      color:red;
-    }
   }
 }

@@ -3,25 +3,19 @@ en:
     follow: 'Follow Joblr'
     about_us: 'About us'
     about_us_description_html: >
-      Joblr dedicates to helping you in your job search. Don't hesitate to <a href:'mailto:team@joblr.co'>contact us</a> to talk about your own situation and try to boost it together.
+      Joblr dedicates to helping you in your job search. Don't hesitate to <a href:'mailto:team@joblr.co'>contact us</a> to talk about your current situation and try to boost it together.
     join:
       title: 'Resume & cover letter templates created by professionals'
       download: 'Download'
-      partners: 'Partnering for your success'
+      partners: 'Our partners are yours'
       partners_description_html: >
         We work in together with human
-        <br/>resources professionals, recruiters
-        <br/>and business owners to help you create
-        <br/>the best CV and find your next job.
-      cta: 'Choose and download the template you prefer out of'
-      cta_button: "our selection"
+        <br/>resources professionals, recruiters and
+        <br/>business owners to help you create the best
+        <br/>CV & cover letter that we land you your next job.
+      cta: 'Choose and download the template you prefer.'
+      cta_button: "View our templates"
       cta_title: 'Download your CV!'
-      notif_modal:
-        explain: 'Thank you for your interest in Joblr. The application is not completely developed yet. If you want to be in touch with of the production launch, please type your email in the field below.'
-        fill_in: 'Fill in your email address:'
-        placeholder: 'Your email address'
-        submit: 'OK'
-        team: "The Joblr team"
     signup:
       title: 'Get your CV & letter checked by professionals'
       community_title: 'Community of experts'
@@ -34,3 +28,10 @@ en:
         is qualified to do so. Their experience and current activity are key.
       cta: 'Upload your material and an expert will provide you personalized feedback within 48hrs'
       cta_button: 'Sign up now!'
+    notif_modal:
+      explain: 'Thank you for your interest in Joblr. The application is not completely developed yet. If you want to be in touch with of the production launch, please type your email in the field below.'
+      fill_in: 'Fill in your email address:'
+      placeholder: 'Your email address'
+      submit: 'OK'
+      team: "The Joblr team"
+      success_message: "Thank you!"
