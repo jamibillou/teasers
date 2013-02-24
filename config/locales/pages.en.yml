@@ -7,7 +7,7 @@ en:
     join:
       title: 'Resume & cover letter templates created by professionals'
       download: 'Download'
-      partners: 'Our partners are yours'
+      partners: 'Partners of your success'
       partners_description: "We work together with human resources professionals, recruiters and business owners to help you create the CV & cover letter that we land you your next job."
       cta: 'Choose and download the template you prefer.'
       cta_button: "View our templates"
@@ -25,7 +25,7 @@ en:
       cta: 'Upload your material and an expert will provide you personalized feedback within 48hrs'
       cta_button: 'Sign up now!'
     notif_modal:
-      explain: 'Thank you for your interest in Joblr. The application is not completely developed yet. If you want to be in touch with of the production launch, please type your email in the field below.'
+      explain: "Thank you for your interest in Joblr. We're still working on the last details but we'll keep you updated when it's ready!"
       fill_in: 'Fill in your email address:'
       placeholder: 'Your email address'
       submit: 'OK'
