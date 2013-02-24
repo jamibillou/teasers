@@ -7,11 +7,12 @@ $ ->
   $('#submit-placeholder').click -> $('#hidden-submit').click()
 
 
-  # Mixpanel calls for CTA buttons
-  # ------------------------------
+  # Mixpanel calls
+  # --------------
 
-  $('.cta-join').click -> mixpanelEvent('templates')
-  $('.cta-signup').click -> mixpanelEvent('feedback')
+  $('.cta-join').click -> mixpanelCall('Clicked CTA', {'Teaser version' : 'templates'})
+  $('.cta-signup').click -> mixpanelCall('Clicked CTA', {'Teaser version' : 'feedback'})
+
 
   # Newsletter form
   # ---------------
@@ -23,7 +24,8 @@ $ ->
     $('#loader').hide()
     $('.control-group').removeClass('error') if $('.control-group').hasClass('error')
     $('.control-group').addClass('success')
-    $('#feedback-message').html(I18n.t('pages.notif_modal.success_message')).show())
+    $('#feedback-message').html(I18n.t('pages.notif_modal.success_message')).show()
+    mixpanelCall('Submitted email'))
 
   $('#new_newsletter').bind('ajax:error',   (evt, xhr, status) ->
     $('#loader').hide()
@@ -31,7 +33,8 @@ $ ->
     $('.control-group').addClass('error')
     $('#feedback-message').html(xhr.responseText).show())
 
-# Calls the Mixpanel event
-# ------------------------
 
-mixpanelEvent = (teaser) -> mixpanel.track('Clicked CTA', {'Teaser version' : teaser})
+# Mixpanel call
+# -------------
+
+mixpanelCall = (evt, properties) -> if properties is undefined then mixpanel.track(evt) else mixpanel.track(evt, properties)

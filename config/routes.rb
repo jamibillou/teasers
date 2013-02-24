@@ -6,6 +6,7 @@ Teasers::Application.routes.draw do
   resources :newsletters
 
   # Dynamic root_path
+  root to: 'pages#join',   constraints: {subdomain: 'staging'}
   root to: 'pages#join',   constraints: {subdomain: 'join'}
   root to: 'pages#signup', constraints: {subdomain: 'signup'}
 end

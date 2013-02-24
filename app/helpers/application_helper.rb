@@ -28,7 +28,7 @@ module ApplicationHelper
     elsif request.subdomain.present? && request.subdomain.match(/^signup$/)
       ga_init(5)
     end
-  end  
+  end
 
   def ga_init(id)
     content_tag(:script, type: 'text/javascript') do
@@ -44,7 +44,7 @@ module ApplicationHelper
     end
   end
 
-  def mixpanel_init	
+  def mixpanel_init(environment)
     content_tag(:script, type: 'text/javascript') do
       "(function(e,b){
         if(!b.__SV){
@@ -76,7 +76,16 @@ module ApplicationHelper
           b._i.push([a,e,d])};
           b.__SV=1.2}})
       (document,window.mixpanel||[]);
-      mixpanel.init('89fa09c4d2027533d28bcb52797527c3');".html_safe
+      mixpanel.init('#{mixpanel_key(environment)}');".html_safe
+    end
+  end
+
+  def mixpanel_key(environment)
+    case environment
+      when :production
+        '89fa09c4d2027533d28bcb52797527c3'
+      when :staging
+        '345b543f3ebc8d22839504a4d42de496'
     end
   end
 

@@ -39,5 +39,4 @@
 
 = render 'notif_modal'
 
-- if Rails.env.production?
-	= mixpanel_call('track', 'Viewed teaser page', "{'Teaser version': 'feedback'}")
+= mixpanel_call('track', 'Viewed teaser page', "{'Teaser version': 'feedback'}") if Rails.env.production?

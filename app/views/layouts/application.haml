@@ -13,7 +13,10 @@
     = csrf_meta_tags
     - if Rails.env.production?
       = analytics_init
-      = mixpanel_init 
+      - if request.subdomain.include? 'staging'
+        = mixpanel_init :staging
+      - else
+        = mixpanel_init :production
 
   %body
     %header.navbar.navbar-fixed-top
