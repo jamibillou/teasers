@@ -22,10 +22,10 @@
 }
 
 #images{
-  margin-top:60px;
+  margin-top:53px;
   #certified{
     background: url('certified.jpg') no-repeat top right;
-    margin-top:46px;
+    margin-top:106px;
     h2{
       padding-top:15px;
       font-size:24px;
@@ -36,9 +36,13 @@
       line-height:26px;
       padding-right:20px;
     }
+    // small desktop
+    @media (min-width:980px) and (max-width: 1200px) {
+      margin-top: 33px;
+    }
     // tablet
     @media (min-width:768px) and (max-width: 979px) {
-      margin-top:20px;
+      margin-top:8px;
       background-size: 100px 100px;
       h2{
         font-size:20px;
@@ -54,7 +58,7 @@
       margin-top:0;
       background: none;
       h2{
-        margin-top:20px;
+        padding-top:50px;
         font-size:20px;
       }
       p{
@@ -90,12 +94,6 @@
           padding-right:15px;
         }
       }
-    }
-  }
-  #cvs{
-    // phone
-    @media (max-width:768px) {
-      margin-top:30px;
     }
   }
 }
@@ -149,7 +147,7 @@
   .span12{
     background-color:$white;
     border:5px solid #78797a;
-    margin-top:62px;
+    margin-top:43px;
     padding:40px 20px;
     text-align:center;
     .cta-text{
@@ -170,7 +168,7 @@
     }
     // phone
     @media (max-width:767px) {
-      margin-top: 52px;
+      margin-top: 54px;
       font-size:18px;
       .btn{
         width:150px;
