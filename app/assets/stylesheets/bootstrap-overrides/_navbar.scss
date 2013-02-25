@@ -1,5 +1,5 @@
-// NAVBAR (FIXED AND STATIC)
-// -------------------------
+// NAVBAR (STATIC)
+// ---------------
 
 
 // COMMON STYLES
@@ -38,9 +38,10 @@
   }
 }
 
-.navbar-fixed-top{
-  position:absolute;
+.navbar.navbar-static-top{
+  margin-bottom:68px;
 }
+
 
 // image
 // -----
