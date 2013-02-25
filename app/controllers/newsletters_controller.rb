@@ -1,8 +1,6 @@
 class NewslettersController < ApplicationController
-	require "rubygems"
-	require "google_drive"
 
-	def create
+  def create
 		@newsletter = Newsletter.new params[:newsletter]
 		unless @newsletter.save
 			respond_to {|format| format.html { render :json => error_messages(@newsletter), :status => :unprocessable_entity if request.xhr? }}
@@ -25,7 +23,7 @@ class NewslettersController < ApplicationController
 	  	session = GoogleDrive.login('francksabattier@gmail.com','13JamirO10')
 	  	if request.subdomain.match(/^(join|staging)$/)
 				session.spreadsheet_by_key('0Anvdw7Lk3scOdG5mdEJwR0xNLVBTbzI5MnM0T2dKdkE').worksheets[0]
-	  	elsif request.subdomain.match(/^(signup|staging)$/)
+	  	elsif request.subdomain.match(/^(signup)$/)
 	  		session.spreadsheet_by_key('0Anvdw7Lk3scOdF9qbEVxODZRNVE3N3YzLUlyTlpDelE').worksheets[0]
 	  	end
 	  end

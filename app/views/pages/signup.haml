@@ -36,7 +36,3 @@
 			.span4.offset4#about-us.hidden-phone
 				%h3=t 'pages.about_us'
 				%p=t 'pages.about_us_description_html'
-
-= render 'notif_modal'
-
-= mixpanel_call('track', 'Viewed teaser page', "{'Teaser version': 'feedback'}") if Rails.env.production?

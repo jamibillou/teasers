@@ -13,10 +13,8 @@
     = csrf_meta_tags
     - if Rails.env.production?
       = analytics_init
-      - if request.subdomain.include? 'staging'
-        = mixpanel_init :staging
-      - else
-        = mixpanel_init :production
+      = mixpanel_init (request.subdomain.match(/^staging$/) ? :staging : :production)
+      = mixpanel_call 'track', 'Viewed teaser page', "{'Teaser version': '#{request.subdomain.match(/^join|staging$/) ? 'templates' : 'feedback'}'}"
 
   %body
     %header.navbar.navbar-fixed-top
@@ -24,4 +22,7 @@
         .container
           = link_to image_tag('base/logo.png', alt: 'Joblr'), root_path, class: 'brand'
     .container
-      #content.row-fluid= yield
+      .row-fluid#content
+        .span12
+          = yield
+          = render 'notif_modal'
