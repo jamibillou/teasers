@@ -23,7 +23,7 @@ fr:
       community2_html: >
         indique que chaque expert présent sur Joblr possède une expérience et un profil
         garantissant la qualité du retour qu'il vous effectuera.
-      cta: 'Envoyez vos fichiers et un expert vous donnera un retour personnalisé sous 48h'
+      cta: 'Envoyez vos fichiers et obtenez votre retour personnalisé sous 48h'
       cta_button: "S'inscrire !"
     notif_modal:
       explain: 'Nous vous remercions de votre intérêt pour Joblr. Le site est encore en cours de développement mais nous vous tiendrons informé(e) dés le lancement !'
