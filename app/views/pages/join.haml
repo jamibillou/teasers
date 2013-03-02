@@ -25,9 +25,9 @@
 .row-fluid#cta
 	.span12
 		.cta-text=t 'pages.join.cta'
-		.btn.btn-large.btn-primary.hidden-phone.cta-join{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.join.cta_title')}
+		%a.btn.btn-large.btn-primary.hidden-phone.cta-join{href: templates_path, title: t('pages.join.cta_title')}
 			=t 'pages.join.cta_button'
-		.btn.btn-primary.visible-phone.cta-join{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.join.cta_title')}
+		%a.btn.btn-primary.visible-phone.cta-join{href: templates_path, title: t('pages.join.cta_title')}
 			=t 'pages.join.cta_button'
 
 %footer

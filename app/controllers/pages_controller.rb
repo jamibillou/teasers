@@ -1,12 +1,22 @@
 class PagesController < ApplicationController
 
-	def join
+	before_filter :new_newsletter
+
+  def join
 		@title = t('pages.join.title')
-		@newsletter = Newsletter.new
 	end
 
 	def signup
 		@title = t('pages.signup.title')
-		@newsletter = Newsletter.new
 	end
+
+  def templates
+    @title = t('pages.templates.title')
+  end
+
+  private
+
+    def new_newsletter
+      @newsletter = Newsletter.new
+    end
 end

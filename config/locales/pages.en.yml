@@ -31,3 +31,9 @@ en:
       submit: 'OK'
       team: "The Joblr team"
       success_message: "Thank you!"
+    templates:
+      title: "Templates"
+      view_big: "View a bigger version of this template"
+      buy_button: "Buy for $0.99"
+      buy_title: "Buy this template for $0.99"
+      format_note: "All our templates are available in both Microsoft Office, iWork and OpenOffice.org formats."

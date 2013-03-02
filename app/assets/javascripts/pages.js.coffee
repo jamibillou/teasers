@@ -33,8 +33,38 @@ $ ->
     $('.control-group').addClass('error')
     $('#feedback-message').html(xhr.responseText).show())
 
+  # Slider
+  # ------
+
+  $('#arrow-left').mouseenter -> showSliderArrows()
+  $('#arrow-right').mouseenter -> showSliderArrows()
+  $('#arrow-left').mouseleave -> hideSliderArrows()
+  $('#arrow-right').mouseleave -> hideSliderArrows()
+
+  $('#arrow-left').click -> moveSlider('left')
+  $('#arrow-right').click -> moveSlider('right')
+
 
 # Mixpanel call
 # -------------
 
 mixpanelCall = (evt, properties) -> if properties is undefined then mixpanel.track(evt) else mixpanel.track(evt, properties)
+
+# Slider
+# ------
+
+showSliderArrows = () ->
+  $('#arrow-left').css('opacity', '1')
+  $('#arrow-right').css('opacity', '1')
+
+hideSliderArrows = () ->
+  $('#arrow-left').css('opacity', '0')
+  $('#arrow-right').css('opacity', '0')
+
+moveSlider = (direction) ->
+  margin = parseInt($('#slider').css('margin-left').replace('px', ''))
+  if direction is 'left'
+    $('#slider').css('margin-left', margin+568+'px') unless (margin >= 0 or margin%568 != 0)
+  else if direction is 'right'
+    $('#slider').css('margin-left', margin-568+'px') unless (margin <= -1136 or margin%568 != 0)
+

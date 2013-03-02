@@ -1,0 +1,29 @@
+.row-fluid#templates
+  .span12
+    #wrapper
+      #arrow-left
+      #slider
+        .template
+          = link_to image_tag("cvs/cv_1_#{locale}_small.png", alt: 'CV 1'), asset_path("cvs/cv_1_#{locale}_big.png"), title: t('pages.templates.view_big')
+          %br/
+          %a.btn.btn-primary{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.templates.buy_title')}=t 'pages.templates.buy_button'
+        .template
+          = link_to image_tag("cvs/cv_2_#{locale}_small.png", alt: 'CV 2'), asset_path("cvs/cv_2_#{locale}_big.png"), title: t('pages.templates.view_big')
+          %br/
+          %a.btn.btn-primary{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.templates.buy_title')}=t 'pages.templates.buy_button'
+        .template
+          = link_to image_tag("cvs/cv_3_#{locale}_small.png", alt: 'CV 3'), asset_path("cvs/cv_3_#{locale}_big.png"), title: t('pages.templates.view_big')
+          %br/
+          %a.btn.btn-primary{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.templates.buy_title')}=t 'pages.templates.buy_button'
+        .template
+          = link_to image_tag("cvs/cv_4_#{locale}_small.jpg", alt: 'CV 4'), asset_path("cvs/cv_4_#{locale}_big.jpg"), title: t('pages.templates.view_big')
+          %br/
+          %a.btn.btn-primary{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.templates.buy_title')}=t 'pages.templates.buy_button'
+        .template
+          = link_to image_tag("cvs/cv_5_#{locale}_small.png", alt: 'CV 5'), asset_path("cvs/cv_5_#{locale}_big.png"), title: t('pages.templates.view_big')
+          %br/
+          %a.btn.btn-primary{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.templates.buy_title')}=t 'pages.templates.buy_button'
+      #arrow-right
+    %p=t 'pages.templates.format_note'
+
+
