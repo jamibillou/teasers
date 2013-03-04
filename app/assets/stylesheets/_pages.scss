@@ -268,52 +268,66 @@ footer{
   }
 }
 
+#templates-join{
+  margin-top:40px;
+}
+
 #templates{
-  #wrapper{
-    overflow:hidden;
-    margin-bottom:50px;
-    #slider{
-      margin-left:0;
-      white-space:nowrap;
-      @include transition(margin-left, 1s);
-      .template{
-        display:inline-block;
-        white-space:normal;
-        margin-right:50px;
-        text-align:center;
-        img{
-          max-height:500px;
-          margin-bottom:30px;
-          @include box-shadow(0 0 15px 0 lighten($grayLight,15%));
-        }
-      }
-    }
-    #arrow-left{
-      @include opacity(0);
-      @include transition(opacity, 0.1s);
-      position:absolute;
-      left:0;
-      top:391px;
-      width:100px;
-      height:100px;
-      background: url('base/arrow-left.png') no-repeat center;
-      cursor:pointer;
-    }
-    #arrow-right{
-      @include opacity(0);
-      @include transition(opacity, 0.1s);
-      position:absolute;
-      right:0;
-      top:391px;
-      width:100px;
-      height:100px;
-      background: url('base/arrow-right.png') no-repeat center;
-      cursor:pointer;
-    }
-  }
   p{
     margin-bottom:50px;
     text-align:center;
     color: $black;
+  }
+}
+
+#wrapper{
+  overflow:hidden;
+  margin-bottom:50px;
+  #slider{
+    margin-left:0;
+    white-space:nowrap;
+    @include transition(margin-left, 1s);
+    .template{
+      display:inline-block;
+      white-space:normal;
+      margin-right:50px;
+      text-align:center;
+      img{
+        max-height:500px;
+        margin-bottom:30px;
+        @include box-shadow(0 0 15px 0 lighten($grayLight,15%));
+        &.small{
+          max-height:350px;
+        }
+      }
+    }
+  }
+  #arrow-left{
+    @include opacity(0);
+    @include transition(opacity, 0.1s);
+    position:absolute;
+    left:0;
+    top:391px;
+    width:100px;
+    height:100px;
+    background: url('base/arrow-left.png') no-repeat center;
+    cursor:pointer;
+    &.small{
+      top:376px;
+    }
+  }
+  #arrow-right{
+    @include opacity(0);
+    @include transition(opacity, 0.1s);
+    position:absolute;
+    right:0;
+    top:391px;
+    width:100px;
+    height:100px;
+    background: url('base/arrow-right.png') no-repeat center;
+    cursor:pointer;
+    &.small{
+      top:376px;
+    }
   }
 }

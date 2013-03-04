@@ -2,25 +2,22 @@
 	.span12
 		%h1=t 'pages.join.title'
 
-.row-fluid#images
-	.span5#certified
-		.visible-phone= image_tag 'cvs.jpg', alt: 'cvs'
-		#partners
-			%h2=t 'pages.join.partners'
-			%p=t 'pages.join.partners_description'
-			.partner
-				= image_tag 'guillaume.jpg', alt: 'G. Masuit'
-				%h5 G. Masuit
-			.partner
-				= image_tag 'delphine.jpg',  alt: 'D. Pau'
-				%h5 D. Pau
-			.partner.last
-				= image_tag 'tristan.jpg',	 alt: 'T. Rousselle'
-				%h5 T. Rousselle
-			.partner.hidden-phone
-				= image_tag 'arrow.jpg',		 alt: 'arrow'
-	.span7.hidden-phone#cvs
-		= image_tag 'cvs.jpg', alt: 'cvs'
+.row-fluid#templates-join
+	.span12
+		#wrapper
+			#arrow-left.small
+			#slider
+				.template
+					= image_tag "cvs/cv_1_#{locale}_small.png", alt: 'CV 1', title: t('pages.templates.view_big'), class: 'small'
+				.template
+					= image_tag "cvs/cv_2_#{locale}_small.png", alt: 'CV 2', title: t('pages.templates.view_big'), class: 'small'
+				.template
+					= image_tag "cvs/cv_3_#{locale}_small.png", alt: 'CV 3', title: t('pages.templates.view_big'), class: 'small'
+				.template
+					= image_tag "cvs/cv_4_#{locale}_small.jpg", alt: 'CV 4', title: t('pages.templates.view_big'), class: 'small'
+				.template
+					= image_tag "cvs/cv_5_#{locale}_small.png", alt: 'CV 5', title: t('pages.templates.view_big'), class: 'small'
+			#arrow-right.small
 
 .row-fluid#cta
 	.span12
