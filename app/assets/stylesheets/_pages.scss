@@ -1,5 +1,5 @@
 body{
-  overflow:hidden;
+  //overflow:hidden;
 }
 .container{
   font-family:Helvetica;
@@ -270,6 +270,7 @@ footer{
 
 #templates{
   #wrapper{
+    overflow:hidden;
     margin-bottom:50px;
     #slider{
       margin-left:0;
