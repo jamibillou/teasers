@@ -9,21 +9,21 @@ fr:
       download: 'Télécharger'
       partners: 'Partenaires de votre réussite'
       partners_description: "Nous travaillons avec de nombreux professionnels des ressources humaines, recruteurs et directeurs d'entreprise pour créer le CV et la lettre de motivation qui vous aideront à décrocher votre prochain job."
-      cta: 'Choisissez et téléchargez le modèle de votre choix.'
+      cta: 'Choisissez et téléchargez votre modèle'
       cta_button: "Voir notre collection"
       cta_title: 'Téléchargez votre CV !'
     signup:
       title: 'Votre CV et lettre revus et corrigés par des professionnels'
       community_title: "Une communauté d'experts"
       community_html: >
-        La recherche d'emploi est une tâche ardue, et ne pas avoir de retours suite à une candidature ou
-        un entretien est frustrant. C'est pour cela que nous sommes en relation avec une communauté de
-        directeurs RH, recruteurs ou encore dirigeants prêts à vous aider dans la rédaction de votre CV
+        La recherche d'emploi est difficile et ne pas avoir de retours après une candidature ou
+        un entretien est frustrant. Joblr est en relation avec une communauté de
+        directeurs des ressources humaines, recruteurs ou encore dirigeants pour vous aider à rédiger votre CV
         et lettre de motivation.
       community2_html: >
         indique que chaque expert présent sur Joblr possède une expérience et un profil
-        garantissant la qualité du retour qu'il vous effectuera.
-      cta: 'Envoyez vos fichiers et obtenez votre retour personnalisé sous 48h'
+        qui garantissent la qualité du retour qu'il vous donnera.
+      cta: 'Envoyez vos documents et obtenez un avis personnalisé sous 48h'
       cta_button: "S'inscrire !"
     notif_modal:
       explain: 'Nous vous remercions de votre intérêt pour Joblr. Le site est encore en cours de développement mais nous vous tiendrons informé(e) dés le lancement !'
