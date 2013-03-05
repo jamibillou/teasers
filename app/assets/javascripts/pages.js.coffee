@@ -44,11 +44,12 @@ $ ->
   $('#arrow-left').click -> moveSlider('left')
   $('#arrow-right').click -> moveSlider('right')
 
-  # Keypresses for the slider
-  # -------------------------
-  $('body').bind('keydown', (e) ->
-    moveSlider('right') if e.keyCode is 39
-    moveSlider('left')  if e.keyCode is 37)
+  # Keypresses for the slider (for templates page only)
+  # ---------------------------------------------------
+  if $(location).attr('pathname') is '/templates'
+    $('body').bind('keydown', (e) ->
+      moveSlider('right') if e.keyCode is 39
+      moveSlider('left')  if e.keyCode is 37)
 
 # Mixpanel call
 # -------------
