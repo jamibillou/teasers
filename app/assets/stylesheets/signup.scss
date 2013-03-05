@@ -1,0 +1,146 @@
+// IMPORTED STYLE
+// the order of this list is vital, DO NOT MODIFIY!
+// ------------------------------------------------
+
+@import "variables_overrides";
+@import "bootstrap";
+@import "bootstrap-overrides/bootstrap";
+@import "bootstrap-responsive";
+@import "font-awesome";
+@import "pages";
+
+#cta{
+  .span12{
+    background-color:$white;
+    border:5px solid #78797a;
+    margin-top:43px;
+    padding:40px 20px;
+    text-align:center;
+    .cta-text{
+      display:inline-block;
+      font-size:20px;
+      font-weight:bold;
+    }
+    @include box-shadow(0 0 5px 0 $grayLight);
+    .btn{
+      margin-left:20px;
+    }
+    // tablet and phones
+    @media (max-width:979px) {
+      .btn{
+        margin-top:15px;
+      }
+      line-height:25px;
+    }
+    // phone
+    @media (max-width:767px) {
+      margin-top: 54px;
+      font-size:18px;
+      .btn{
+        width:150px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+    }
+  }
+}
+
+#community{
+  margin-top: 70px;
+  // tablet and phone
+  @media (max-width:979px){
+    #image{
+      width:100%;
+    }
+  }
+  #experts{
+    background-color:white;
+    padding:10px;
+    text-align:right;
+    h2{
+      text-align:center;
+      font-size:23px;
+      padding-bottom:25px;
+    }
+    // big desktop
+    @media (min-width:1201px) {
+      min-height:354px;
+    }
+    // tablet and phone
+    @media (max-width:979px) {
+      text-align:left;
+      width:100%;
+      margin-left:0%;
+      margin-top:50px;
+      h2{
+        padding-bottom:12px;
+      }
+    }
+    // small desktop
+    @media (min-width:980px) and (max-width:1200px) {
+      h2{
+        font-size:18px;
+        padding-bottom:10px;
+      }
+    }
+    #description{
+      margin-top:20px;
+    }
+  }
+}
+
+footer{
+  position:absolute;
+  background-color:#e1e2e5;
+  left:0;
+  width:100%;
+  margin-top:-70px;
+  z-index:-10;
+  .container{
+    margin-top:108px;
+    margin-bottom:34px;
+    // tablet & phone
+    @media (max-width: 979px) {
+      margin-top:127px;
+    }
+    h3{
+      font-size:18px;
+    }
+    .social-links{
+      margin-top:20px;
+      a{
+        font-size:30px;
+        margin-right:10px;
+        color:$grayDark;
+        &:hover{
+          color:$black;
+          text-decoration:none;
+        }
+      }
+      // phone
+      @media (max-width:767px) {
+        text-align: center;
+        margin-top:0;
+      }
+    }
+    #about-us{
+      text-align:right;
+      font-size:13px;
+      p{
+        margin:20px 0 0 0;
+      }
+    }
+  }
+  // tablet
+  @media (min-width:768px) and (max-width: 979px) {
+    margin-top:-90px;
+  }
+  // tablet and phone
+  @media (max-width:767px) {
+    margin-top:-95px;
+  }
+  // small desktop
+  @media (min-width:980px) and (max-width:1200px){
+    margin-top: -72px;
+  }
+}

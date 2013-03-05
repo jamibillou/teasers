@@ -2,10 +2,30 @@
 	.span12
 		%h1=t 'pages.join.title'
 
+//.row-fluid#images
+//	.span5#certified
+//		.visible-phone= image_tag 'cvs.jpg', alt: 'cvs'
+//		#partners
+//			%h2=t 'pages.join.partners'
+//			%p=t 'pages.join.partners_description'
+//			.partner
+//				= image_tag 'guillaume.jpg', alt: 'G. Masuit'
+//				%h5 G. Masuit
+//			.partner
+//				= image_tag 'delphine.jpg',  alt: 'D. Pau'
+//				%h5 D. Pau
+//			.partner.last
+//				= image_tag 'tristan.jpg',	 alt: 'T. Rousselle'
+//				%h5 T. Rousselle
+//			.partner.hidden-phone
+//				= image_tag 'arrow.jpg',		 alt: 'arrow'
+//	.span7.hidden-phone#cvs
+//		= image_tag 'cvs.jpg', alt: 'cvs'
+
 .row-fluid#templates-join
 	.span12
 		#wrapper
-			#arrow-left.small
+			#arrow-left
 			#slider
 				.template
 					= image_tag "cvs/cv_1_#{locale}_small.png", alt: 'CV 1', title: t('pages.templates.view_big'), class: 'small'
@@ -19,9 +39,10 @@
 					= image_tag "cvs/cv_5_#{locale}_small.png", alt: 'CV 5', title: t('pages.templates.view_big'), class: 'small'
 			#arrow-right.small
 
-.row-fluid#cta
-	.span12
-		.cta-text=t 'pages.join.cta'
+.row-fluid
+	.span4
+	.span8#join-cta
+		%h2=t 'pages.join.cta'
 		%a.btn.btn-large.btn-primary.hidden-phone.cta-join{href: templates_path, title: t('pages.join.cta_title')}
 			=t 'pages.join.cta_button'
 		%a.btn.btn-primary.visible-phone.cta-join{href: templates_path, title: t('pages.join.cta_title')}
