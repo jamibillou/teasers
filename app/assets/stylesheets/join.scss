@@ -27,11 +27,9 @@ footer{
   background-color:#e1e2e5;
   left:0;
   width:100%;
-  margin-top:-70px;
-  z-index:-10;
   .container{
-    margin-top:108px;
-    margin-bottom:34px;
+    margin-top:50px;
+    margin-bottom:50px;
     // tablet & phone
     @media (max-width: 979px) {
       margin-top:127px;
@@ -39,8 +37,14 @@ footer{
     h3{
       font-size:18px;
     }
+    p{
+      margin-top:5px;
+    }
+    #images{
+    	margin-top:30px;
+    }
     .social-links{
-      margin-top:20px;
+      margin-top:101px;
       a{
         font-size:30px;
         margin-right:10px;
@@ -59,9 +63,6 @@ footer{
     #about-us{
       text-align:right;
       font-size:13px;
-      p{
-        margin:20px 0 0 0;
-      }
     }
   }
   // tablet

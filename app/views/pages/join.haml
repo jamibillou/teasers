@@ -51,7 +51,19 @@
 		.row-fluid
 			.span4
 				.hidden-phone
-					%h3=t 'pages.follow'
+					%h3=t 'pages.join.partners'
+					%p=t 'pages.join.partners_description'
+				#images
+					#partners
+						.partner
+							= image_tag 'guillaume.png', alt: 'G. Masuit'
+						.partner
+							= image_tag 'delphine.png',  alt: 'D. Pau'
+						.partner.last
+							= image_tag 'tristan.png',	 alt: 'T. Rousselle'
+			.span5.offset3#about-us.hidden-phone
+				%h3=t 'pages.about_us'
+				%p=t 'pages.about_us_description_html'
 				.social-links
 					%a{href: 'http://twitter.com/joblr_co', target: 'blank'}
 						.icon-twitter
@@ -59,6 +71,3 @@
 						.icon-linkedin
 					%a{href: 'http://fb.me/joblr.co', target: 'blank'}
 						.icon-facebook
-			.span5.offset3#about-us.hidden-phone
-				%h3=t 'pages.about_us'
-				%p=t 'pages.about_us_description_html'
