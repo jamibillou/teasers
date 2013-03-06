@@ -27,7 +27,8 @@ $ ->
     $('.control-group').removeClass('error') if $('.control-group').hasClass('error')
     $('.control-group').addClass('success')
     $('#feedback-message').html(I18n.t('pages.notif_modal.success_message')).show()
-    mixpanelCall('Submitted email'))
+    mixpanelCall('Submitted templates email') if getSubdomain() is 'join'         
+    mixpanelCall('Submitted feedback email')  if getSubdomain() is 'signup')
 
   $('#new_newsletter').bind('ajax:error',   (evt, xhr, status) ->
     $('#loader').hide()
@@ -76,3 +77,7 @@ moveSlider = (direction) ->
   else if direction is 'right'
     $('#slider').css('margin-left', margin-568+'px') unless (margin <= -1136 or margin%568 != 0)
 
+# Get subdomain
+# -------------
+
+getSubdomain = () -> location.hostname.split('.')[0]
