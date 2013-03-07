@@ -18,8 +18,7 @@
 					= image_tag "cvs/cv_5_#{locale}_small.png", alt: 'CV 5', title: t('pages.templates.view_big'), class: 'small'
 
 .row-fluid
-	.span4
-	.span8#join-cta
+	.span12#join-cta
 		%h2=t 'pages.join.cta'
 		%a.btn.btn-large.btn-primary.hidden-phone.cta-join{href: templates_path, title: t('pages.join.cta_title')}
 			=t 'pages.join.cta_button'
@@ -29,9 +28,8 @@
 %footer
 	.row-fluid
 		.span5
-			.hidden-phone
-				%h3=t 'pages.join.partners'
-				%p=t 'pages.join.partners_description'
+			%h3=t 'pages.join.partners'
+			%p=t 'pages.join.partners_description'
 			#images
 				#partners
 					.partner
@@ -40,8 +38,9 @@
 						= image_tag 'delphine.png',  alt: 'D. Pau'
 					.partner.last
 						= image_tag 'tristan.png',	 alt: 'T. Rousselle'
-		.span4.offset3#follow-us.hidden-phone
-			%h3=t 'pages.follow_us'
+		.span4.offset3#follow-us
+			.hidden-phone
+				%h3=t 'pages.follow_us'
 			.social-links
 				%a{href: 'http://twitter.com/joblr_co', target: 'blank'}
 					.icon-twitter
