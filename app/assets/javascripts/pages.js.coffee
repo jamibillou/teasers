@@ -14,7 +14,7 @@ $ ->
   $('.cta-signup').click     -> mixpanelCall('Clicked feedback CTA')
   for i in [1..5]
     $('#cta_template_'+i).bind('click', {i: i}, (evt) ->
-      mixpanelCall('Clicked template CTA',{'Template version' : evt.data.i}))
+      mixpanelCall('Clicked Buy button',{'Template version' : evt.data.i}))
 
   # Newsletter form
   # ---------------
@@ -44,8 +44,8 @@ $ ->
   $('#arrow-left').mouseleave -> hideSliderArrows()
   $('#arrow-right').mouseleave -> hideSliderArrows()
 
-  $('#arrow-left').click -> moveSlider('left')
-  $('#arrow-right').click -> moveSlider('right')
+  $('.arrow-left').click -> moveSlider('left')
+  $('.arrow-right').click -> moveSlider('right')
 
   # Keypresses for the slider (for templates page only)
   # ---------------------------------------------------

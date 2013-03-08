@@ -113,7 +113,8 @@ footer{
         max-height:500px;
         margin-bottom:30px;
         @include box-shadow(0 0 15px 0 lighten($grayLight,15%));
-        &.small{
+        // phone and tablet
+        @media (max-width:979px){
           max-height:350px;
         }
       }
@@ -123,26 +124,40 @@ footer{
       padding-left:20px;
     }
   }
-  #arrow-left{
-    @include opacity(0);
-    @include transition(opacity, 0.1s);
+  .arrow-left{
+    // desktop
+    @media (min-width:979px){
+      @include opacity(0);
+      @include transition(opacity, 0.1s);
+    }
     position:absolute;
     left:0;
-    top:391px;
+    top:380px;
     width:100px;
     height:100px;
     background: url('base/arrow-left.png') no-repeat center;
-    cursor:pointer;
+    cursor:pointer;    
+    // phone and tablet
+    @media (max-width:979px){
+      top:305px;
+    }
   }
-  #arrow-right{
-    @include opacity(0);
-    @include transition(opacity, 0.1s);
+  .arrow-right{
+    // desktop
+    @media (min-width:979px){
+      @include opacity(0);
+      @include transition(opacity, 0.1s);
+    }
     position:absolute;
     right:0;
-    top:391px;
+    top:388px;
     width:100px;
     height:100px;
     background: url('base/arrow-right.png') no-repeat center;
     cursor:pointer;
+    // phone and tablet
+    @media (max-width:979px){
+      top:312px;
+    }
   }
 }

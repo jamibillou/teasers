@@ -1,7 +1,8 @@
 .row-fluid#templates
   .span12
     #wrapper
-      #arrow-left
+      .arrow-left{id:'arrow-left', class: 'visible-desktop'}
+      .arrow-left.hidden-desktop
       #slider
         .template
           = link_to image_tag("cvs/cv_1_#{locale}_small.png", alt: 'CV 1'), asset_path("cvs/cv_1_#{locale}_big.png"), title: t('pages.templates.view_big')
@@ -23,7 +24,8 @@
           = link_to image_tag("cvs/cv_5_#{locale}_small.png", alt: 'CV 5'), asset_path("cvs/cv_5_#{locale}_big.png"), title: t('pages.templates.view_big')
           %br/
           %a.btn.btn-primary{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.templates.buy_title'), id: 'cta_template_5'}=t 'pages.templates.buy_button'
-      #arrow-right
+      .arrow-right{id:'arrow-right', class: 'visible-desktop'}
+      .arrow-right.hidden-desktop
     %p=t 'pages.templates.format_note'
 
 
