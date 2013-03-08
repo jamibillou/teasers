@@ -71,11 +71,12 @@ hideSliderArrows = () ->
   $('#arrow-right').css('opacity', '0')
 
 moveSlider = (direction) ->
+  length = if $(document).width() > 979 then 568 else 320
   margin = parseInt($('#slider').css('margin-left').replace('px', ''))
   if direction is 'left'
-    $('#slider').css('margin-left', margin+568+'px') unless (margin >= 0 or margin%568 != 0)
+    $('#slider').css('margin-left', margin+length+'px') unless (margin >= 0 or margin%length != 0)
   else if direction is 'right'
-    $('#slider').css('margin-left', margin-568+'px') unless (margin <= -1136 or margin%568 != 0)
+    $('#slider').css('margin-left', margin-length+'px') unless (margin <= -1136 or margin%length != 0)
 
 # Get subdomain
 # -------------
