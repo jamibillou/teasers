@@ -14,7 +14,7 @@
   overflow:hidden;
 }
 
-#join-cta{
+#cta.join{
   h2{
     display:inline;
     font-size:22px;
@@ -69,12 +69,20 @@ footer{
     }
     // phone
     @media (max-width:767px) {
-      text-align: center;
-      margin-top:50px;
+      text-align: left;
+      a{
+        margin-left:0;
+        margin-right:10px;
+      }
     }
   }
   #follow-us{
     text-align:right;
+    // phone
+    @media (max-width:767px) {
+      margin-top:50px;
+      text-align: left;
+    }
   }
   margin-top:0px;
   // phone
@@ -84,80 +92,85 @@ footer{
   }
 }
 
-#templates-join{
-  margin-top:40px;
-}
-
 #templates{
+  #wrapper{
+    overflow:hidden;
+    #slider{
+      padding-left:40px;
+      margin-left:0;
+      white-space:nowrap;
+      @include transition(margin-left, 1s);
+      .template{
+        display:inline-block;
+        white-space:normal;
+        margin-right:50px;
+        text-align:center;
+        img{
+          max-height:500px;
+          margin-bottom:30px;
+          @include box-shadow(0 0 15px 0 lighten($grayLight,15%));
+          // phone and tablet
+          @media (max-width:979px){
+            max-height:350px;
+          }
+        }
+      }
+      // phone
+      @media (max-width:767px){
+        padding-left:20px;
+      }
+    }
+    .arrow-left{
+      // desktop
+      @media (min-width:979px){
+        @include opacity(0);
+        @include transition(opacity, 0.1s);
+      }
+      position:absolute;
+      left:0;
+      top:380px;
+      width:100px;
+      height:100px;
+      background: url('base/arrow-left.png') no-repeat center;
+      cursor:pointer;
+      // phone and tablet
+      @media (max-width:979px){
+        top:305px;
+      }
+    }
+    .arrow-right{
+      // desktop
+      @media (min-width:979px){
+        @include opacity(0);
+        @include transition(opacity, 0.1s);
+      }
+      position:absolute;
+      right:0;
+      top:388px;
+      width:100px;
+      height:100px;
+      background: url('base/arrow-right.png') no-repeat center;
+      cursor:pointer;
+      // phone and tablet
+      @media (max-width:979px){
+        top:312px;
+      }
+    }
+  }
+  &.join{
+    margin-top:60px;
+    #wrapper #slider .template{
+      margin-right:35px;
+      img{
+        max-height:350px;
+        margin-bottom:32px;
+      }
+    }
+  }
   p{
     margin-top:50px;
     margin-bottom:50px;
     text-align:center;
     color: $black;
-  }
-}
-
-#wrapper{
-  overflow:hidden;
-  #slider{
-    padding-left:40px;
-    margin-left:0;
-    white-space:nowrap;
-    @include transition(margin-left, 1s);
-    .template{
-      display:inline-block;
-      white-space:normal;
-      margin-right:50px;
-      text-align:center;
-      img{
-        max-height:500px;
-        margin-bottom:30px;
-        @include box-shadow(0 0 15px 0 lighten($grayLight,15%));
-        // phone and tablet
-        @media (max-width:979px){
-          max-height:350px;
-        }
-      }
-    }
-    // phone
-    @media (max-width:767px){
-      padding-left:20px;
-    }
-  }
-  .arrow-left{
-    // desktop
-    @media (min-width:979px){
-      @include opacity(0);
-      @include transition(opacity, 0.1s);
-    }
-    position:absolute;
-    left:0;
-    top:380px;
-    width:100px;
-    height:100px;
-    background: url('base/arrow-left.png') no-repeat center;
-    cursor:pointer;    
-    // phone and tablet
-    @media (max-width:979px){
-      top:305px;
-    }
-  }
-  .arrow-right{
-    // desktop
-    @media (min-width:979px){
-      @include opacity(0);
-      @include transition(opacity, 0.1s);
-    }
-    position:absolute;
-    right:0;
-    top:388px;
-    width:100px;
-    height:100px;
-    background: url('base/arrow-right.png') no-repeat center;
-    cursor:pointer;
-    // phone and tablet
-    @media (max-width:979px){
-      top:312px;
-    }
   }
 }
