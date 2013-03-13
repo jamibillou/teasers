@@ -10,11 +10,11 @@ $ ->
   # Mixpanel calls
   # --------------
 
-  $('.cta-join').click       -> mixpanelCall('Clicked templates CTA')
-  $('.cta-signup').click     -> mixpanelCall('Clicked feedback CTA')
+  $('.cta-join').click   -> mixpanelCall('Clicked templates CTA')
+  $('.cta-signup').click -> mixpanelCall('Clicked feedback CTA')
   for i in [1..5]
     $('#cta_template_'+i).bind('click', {i: i}, (evt) ->
-      mixpanelCall('Clicked Buy button',{'Template version' : evt.data.i}))
+      mixpanelCall('Clicked buy template button', {'Template version' : evt.data.i}))
 
   # Newsletter form
   # ---------------
@@ -27,7 +27,7 @@ $ ->
     $('.control-group').removeClass('error') if $('.control-group').hasClass('error')
     $('.control-group').addClass('success')
     $('#feedback-message').html(I18n.t('pages.notif_modal.success_message')).show()
-    mixpanelCall('Submitted templates email') if getSubdomain() is 'join'         
+    mixpanelCall('Submitted templates email') if getSubdomain() is 'join'
     mixpanelCall('Submitted feedback email')  if getSubdomain() is 'signup')
 
   $('#new_newsletter').bind('ajax:error',   (evt, xhr, status) ->
@@ -47,8 +47,6 @@ $ ->
   $('.arrow-left').click -> moveSlider('left')
   $('.arrow-right').click -> moveSlider('right')
 
-  # Keypresses for the slider (for templates page only)
-  # ---------------------------------------------------
   if $(location).attr('pathname') is '/templates'
     $('body').bind('keydown', (e) ->
       moveSlider('right') if e.keyCode is 39
@@ -71,12 +69,13 @@ hideSliderArrows = () ->
   $('#arrow-right').css('opacity', '0')
 
 moveSlider = (direction) ->
-  length = if $(document).width() > 979 then 568 else 320
+  width = if $(document).width() > 979 then 438 else 308
   margin = parseInt($('#slider').css('margin-left').replace('px', ''))
+  minMargin = if $(document).width() > 979 then -1314 else -1232
   if direction is 'left'
-    $('#slider').css('margin-left', margin+length+'px') unless (margin >= 0 or margin%length != 0)
+    $('#slider').css('margin-left', margin+width+'px') unless (margin >= 0 or margin%width != 0)
   else if direction is 'right'
-    $('#slider').css('margin-left', margin-length+'px') unless (margin <= -1136 or margin%length != 0)
+    $('#slider').css('margin-left', margin-width+'px') unless (margin <= minMargin or margin%width != 0)
 
 # Get subdomain
 # -------------

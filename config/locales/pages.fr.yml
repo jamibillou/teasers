@@ -9,9 +9,9 @@ fr:
       download: 'Télécharger'
       partners: 'Partenaires de votre réussite'
       partners_description: "Nous travaillons avec de nombreux professionnels des ressources humaines, recruteurs et directeurs d'entreprise pour créer le CV et la lettre de motivation qui vous aideront à décrocher votre prochain job."
-      cta: 'Choisissez et téléchargez votre modèle'
-      cta_button: "Voir notre collection"
-      cta_title: 'Téléchargez votre CV !'
+      cta_text: 'Choisissez et téléchargez votre modèle.'
+      cta: "Voir notre collection"
+      cta_title: 'Voir tous nos modèles'
     signup:
       title: 'Votre CV et lettre revus et corrigés par des professionnels'
       community_title: "Une communauté d'experts"

@@ -7,11 +7,11 @@ en:
     join:
       title: 'Resume & cover letter templates created by professionals'
       download: 'Download'
-      partners: 'Partners of your success'
-      partners_description: "We work together with human resources professionals, recruiters and business owners to help you create the CV & cover letter that we land you your next job."
-      cta: 'Choose and download the template you prefer.'
-      cta_button: "View our templates"
-      cta_title: 'Download your CV!'
+      partners: 'Partnering for your success'
+      partners_description: "We work together with human resources professionals, recruiters and business owners to help you create the CV & cover letter that will land you your next job."
+      cta_text: 'Choose and download the template you prefer.'
+      cta: "View our templates"
+      cta_title: "View our templates"
     signup:
       title: 'Get your CV & letter checked by professionals'
       community_title: 'Community of experts'

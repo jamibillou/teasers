@@ -7,23 +7,23 @@
 		#wrapper
 			#slider
 				.template
-					= image_tag "cvs/cv_1_#{locale}_small.png", alt: 'CV 1', title: t('pages.templates.view_big'), class: 'small'
+					= link_to image_tag("cvs/cv_1_#{locale}_small.png", alt: 'CV 1'), templates_path, title: t('pages.join.cta_title')
 				.template
-					= image_tag "cvs/cv_2_#{locale}_small.png", alt: 'CV 2', title: t('pages.templates.view_big'), class: 'small'
+					= link_to image_tag("cvs/cv_2_#{locale}_small.png", alt: 'CV 2'), templates_path, title: t('pages.join.cta_title')
 				.template
-					= image_tag "cvs/cv_3_#{locale}_small.png", alt: 'CV 3', title: t('pages.templates.view_big'), class: 'small'
+					= link_to image_tag("cvs/cv_3_#{locale}_small.png", alt: 'CV 3'), templates_path, title: t('pages.join.cta_title')
 				.template
-					= image_tag "cvs/cv_4_#{locale}_small.jpg", alt: 'CV 4', title: t('pages.templates.view_big'), class: 'small'
+					= link_to image_tag("cvs/cv_4_#{locale}_small.jpg", alt: 'CV 4'), templates_path, title: t('pages.join.cta_title')
 				.template
-					= image_tag "cvs/cv_5_#{locale}_small.png", alt: 'CV 5', title: t('pages.templates.view_big'), class: 'small'
+					= link_to image_tag("cvs/cv_5_#{locale}_small.png", alt: 'CV 5'), templates_path, title: t('pages.join.cta_title')
 
 .row-fluid
 	.span12#cta.join
-		%h2=t 'pages.join.cta'
+		%h2=t 'pages.join.cta_text'
 		%a.btn.btn-large.btn-primary.hidden-phone.cta-join{href: templates_path, title: t('pages.join.cta_title')}
-			=t 'pages.join.cta_button'
+			=t 'pages.join.cta'
 		%a.btn.btn-primary.visible-phone.cta-join{href: templates_path, title: t('pages.join.cta_title')}
-			=t 'pages.join.cta_button'
+			=t 'pages.join.cta'
 
 %footer
 	.row-fluid
