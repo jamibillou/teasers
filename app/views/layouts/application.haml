@@ -14,7 +14,7 @@
     - if Rails.env.production?
       = analytics_init
       = mixpanel_init (request.subdomain.match(/^staging$/) ? :staging : :production)
-      = mixpanel_call 'track', (request.subdomain.match(/^join|staging$/) ? 'Viewed templates teaser pages' : 'Viewed feedback teaser page')
+      = select_view_event
 
   %body
     %header.navbar.navbar-static-top

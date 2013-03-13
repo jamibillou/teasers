@@ -10,7 +10,6 @@ $ ->
   # Mixpanel calls
   # --------------
 
-  $('.cta-join').click   -> mixpanelCall('Clicked templates CTA')
   $('.cta-signup').click -> mixpanelCall('Clicked feedback CTA')
   for i in [1..5]
     $('#cta_template_'+i).bind('click', {i: i}, (evt) ->

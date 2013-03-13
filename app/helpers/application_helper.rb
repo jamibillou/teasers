@@ -96,4 +96,14 @@ module ApplicationHelper
   def mixpanel_call(action, value, properties = nil)
     content_tag(:script, type: 'text/javascript') {"mixpanel.#{action}('#{value}'#{', '+properties if properties});".html_safe}
   end
+
+  def select_view_event
+    if request.fullpath.include?('templates')
+      mixpanel_call 'track', 'Clicked template CTA'
+    elsif request.subdomain.match(/^join|staging$/) && !request.fullpath.include?('templates')
+      mixpanel_call 'track', 'Viewed templates teaser page'
+    else
+      mixpanel_call 'track', 'Viewed feedback teaser page'
+    end
+  end
 end
