@@ -4,6 +4,10 @@ module ApplicationHelper
 		"Joblr | #{@title}"
 	end
 
+  def default_locale
+    %w(en fr).include?(I18n.locale.to_s) ? I18n.locale.to_s : 'en'
+  end
+
   # Errors
   # ------
 
