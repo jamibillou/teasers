@@ -11,7 +11,7 @@
 
 #description{
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 	line-height: 26px;
 	font-size: 18px;
 	h3{
@@ -20,6 +20,23 @@
 	.btn{
 		margin-top: 20px;
 	}
+}
+
+#steps{
+	.step{
+		@include border-radius(5px);
+		background:linear-gradient(rgb(0, 131, 224), rgb(0, 109, 186));;
+		padding: 10px 0;
+		color:$white;
+		min-height: 150px;
+		font-size: 23px;
+	}
+	text-align: center;
+	margin-bottom: 70px;
+  .icon{
+    margin-bottom:15px;
+    font-size:65px;
+  }
 }
 
 footer{
