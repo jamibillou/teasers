@@ -1,0 +1,79 @@
+// IMPORTED STYLE
+// the order of this list is vital, DO NOT MODIFIY!
+// ------------------------------------------------
+
+@import "variables_overrides";
+@import "bootstrap";
+@import "bootstrap-overrides/bootstrap";
+@import "bootstrap-responsive";
+@import "font-awesome";
+@import "pages";
+
+#description{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	line-height: 26px;
+	font-size: 18px;
+	h3{
+		margin: 20px 0px;
+	}
+	.btn{
+		margin-top: 20px;
+	}
+}
+
+footer{
+  width:100%;
+  position:absolute;
+  left:0;
+  background-color:#e1e2e5;
+  padding:50px 0;
+  h3{
+    font-size:18px;
+  }
+  p{
+    margin-top:5px;
+    line-height:17px;
+  }
+  #images{
+    margin-top:30px;
+  }
+  .social-links{
+    margin-top:10px;
+    a{
+      font-size:30px;
+      margin-left:10px;
+      color:$grayDark;
+      &:hover{
+        color:$black;
+        text-decoration:none;
+      }
+    }
+    // phone
+    @media (max-width:767px) {
+      text-align: left;
+      a{
+        margin-left:0;
+        margin-right:10px;
+      }
+    }
+  }
+  #partnering{
+  	padding-left: 40px;
+  }
+  #follow-us{
+    padding-right:40px;
+    text-align:right;
+    // phone
+    @media (max-width:767px) {
+      margin-top:50px;
+      text-align: left;
+    }
+  }
+  margin-top:0px;
+  // phone
+  @media (max-width:767px){
+    position:absolute;
+    left:0;
+  }
+}

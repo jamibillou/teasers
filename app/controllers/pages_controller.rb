@@ -14,6 +14,10 @@ class PagesController < ApplicationController
     @title = t('pages.templates.title')
   end
 
+  def resume
+    @title = t('pages.resume.title')
+  end
+
   private
 
     def new_newsletter

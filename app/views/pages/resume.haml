@@ -1,0 +1,35 @@
+.row-fluid#value_prop
+	.span12
+		%h1=t 'pages.resume.title'
+
+.row-fluid#description
+	.span8
+		= image_tag 'resumes.png'
+	.span4
+		%h3=t 'pages.resume.subtitle'
+		=t 'pages.resume.description_html'
+		%a.btn.btn-large.btn-primary.hidden-phone{href: templates_path, title: t('pages.join.cta_title')}
+			=t 'pages.resume.cta'
+
+%footer
+	.row-fluid
+		.span5#partnering
+			%h3=t 'pages.join.partners'
+			%p=t 'pages.join.partners_description'
+			#images
+				#partners
+					.partner
+						= image_tag 'guillaume.png', alt: 'G. Masuit'
+					.partner
+						= image_tag 'delphine.png',  alt: 'D. Pau'
+					.partner.last
+						= image_tag 'tristan.png',	 alt: 'T. Rousselle'
+		.span4.offset3#follow-us
+			%h3=t 'pages.follow_us'
+			.social-links
+				%a{href: 'http://twitter.com/joblr_co', target: 'blank'}
+					.icon-twitter
+				%a{href: 'http://linkedin.com/company/joblr', target: 'blank'}
+					.icon-linkedin
+				%a{href: 'http://fb.me/joblr.co', target: 'blank'}
+					.icon-facebook
