@@ -2,13 +2,20 @@
 	.span12
 		%h1=t 'pages.resume.title'
 
-.row-fluid#description
+.row-fluid.description.visible-desktop
 	.span8
 		= image_tag "resumes_#{default_locale}.png"
 	.span4
 		%h3=t 'pages.resume.subtitle'
 		=t 'pages.resume.description_html'
-		%a.btn.btn-large.btn-primary.hidden-phone.cta-resume{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.resume.cta')}
+		%a.btn.btn-large.btn-primary.cta-resume{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.resume.cta')}
+			=t 'pages.resume.cta'
+.row-fluid.description.hidden-desktop
+	.span12
+		= image_tag "resumes_#{default_locale}.png"
+		%h3=t 'pages.resume.subtitle'
+		=t 'pages.resume.description_html'
+		%a.btn.btn-large.btn-primary.pull-right.cta-resume{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.resume.cta')}
 			=t 'pages.resume.cta'
 
 .row-fluid#steps
@@ -19,11 +26,11 @@
 	.span4.step
 		.icon
 			.icon-picture
-		=t @price == 'false' ? 'pages.resume.step2' : 'pages.resume.step2_alt'
+		=t @price == 'faldse' ? 'pages.resume.step2' : 'pages.resume.step2_alt_html'
 	.span4.step
 		.icon
 			.icon-thumbs-up
-		=t @price == 'false' ? 'pages.resume.step3' : 'pages.resume.step3_alt'
+		=t @price == 'faldse' ? 'pages.resume.step3' : 'pages.resume.step3_alt'
 
 %footer
 	.row-fluid
@@ -38,7 +45,7 @@
 						= image_tag 'delphine.png',  alt: 'D. Pau'
 					.partner.last
 						= image_tag 'tristan.png',	 alt: 'T. Rousselle'
-		.span4.offset3#follow-us
+		.span4.offset3#follow-us.hidden-phone
 			%h3=t 'pages.follow_us'
 			.social-links
 				%a{href: 'http://twitter.com/joblr_co', target: 'blank'}

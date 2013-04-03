@@ -9,7 +9,7 @@
 @import "font-awesome";
 @import "pages";
 
-#description{
+.description{
 	margin-top: 50px;
 	margin-bottom: 70px;
 	line-height: 26px;
@@ -20,6 +20,18 @@
 	.btn{
 		margin-top: 20px;
 	}
+  // small desktop
+  @media (min-width:980px) and (max-width: 1200px) {
+  	font-size: 16px;
+  }
+  // tablet and phone
+  @media (max-width:979px) {
+  	margin-bottom: 110px;
+  	.btn{
+  		margin-top: 10px;
+  		margin-right: -1px;
+  	}
+  }
 }
 
 #steps{
@@ -29,8 +41,13 @@
 		padding: 10px 5px;
 		color:$white;
 		min-height: 160px;
-		font-size: 23px;
+		font-size: 22px;
 		line-height: 25px;
+	  // tablet
+	  @media (min-width:768px) and (max-width: 979px) {
+	  	font-size: 17px;
+	  	line-height: 20px;
+	  }
 	}
 	text-align: center;
 	margin-bottom: 70px;

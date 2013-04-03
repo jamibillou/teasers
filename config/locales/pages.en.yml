@@ -42,11 +42,11 @@ en:
       subtitle: "Put your CV on top of the recruiter's stack"
       description_html: >
         Most resumes have the same old-fashioned design. They don't catch the eye of the recruiter.<br/>
-        In collaboration with designers and HR professionals, we provide you a well-designed resume <b>filled with your information</b>.<br/><br/>
+        In collaboration with designers and HR professionals, we provide you a well-designed resume <b>filled with your information</b>.<br/>
         Your mission: upload your CV, select a template. <b>We do the rest.</b><br/>
       cta: 'Upload my CV'
       step1: '1. Upload your original CV'
       step2: '2. Choose your template'
-      step2_alt: '2. Choose your template (from $5 to $10)'
+      step2_alt_html: '2. Choose your template <br/>(from $5 to $10)'
       step3: '3. Receive your kick-ass resume'
-      step3_alt: '3. Receive your kick-ass template within 48h'
+      step3_alt: '3. Receive your kick-ass resume within 48h'
