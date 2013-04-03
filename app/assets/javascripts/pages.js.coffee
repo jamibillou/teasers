@@ -11,6 +11,7 @@ $ ->
   # --------------
 
   $('.cta-signup').click -> mixpanelCall('Clicked feedback CTA')
+  $('.cta-resume').click -> mixpanelCall('Clicked template v2 CTA')
   for i in [1..5]
     $('#cta_template_'+i).bind('click', {i: i}, (evt) ->
       mixpanelCall('Clicked buy template button', {'Template version' : evt.data.i}))
@@ -26,8 +27,9 @@ $ ->
     $('.control-group').removeClass('error') if $('.control-group').hasClass('error')
     $('.control-group').addClass('success')
     $('#feedback-message').html(I18n.t('pages.notif_modal.success_message')).show()
-    mixpanelCall('Submitted templates email') if getSubdomain() is 'join'
-    mixpanelCall('Submitted feedback email')  if getSubdomain() is 'signup')
+    mixpanelCall('Submitted templates email')    if getSubdomain() is 'join'
+    mixpanelCall('Submitted feedback email')     if getSubdomain() is 'signup'
+    mixpanelCall('Submitted templates v2 email') if getSubdomain() is 'resume')
 
   $('#new_newsletter').bind('ajax:error',   (evt, xhr, status) ->
     $('#loader').hide()
