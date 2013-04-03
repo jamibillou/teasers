@@ -39,4 +39,14 @@ fr:
       buy_title: "Acheter ce modèle pour 0,99€"
       format_note: "Tous nos modèles sont disponibles aux formats Microsoft Office, iWork et OpenOffice.org."
     resume:
-      title: "Give your resume a chance to look great"
+      title: 'Donnez une seconde jeunesse à votre CV'
+      subtitle: 'Mettez votre CV au sommet de la pile du recruteur'
+      description_html: >
+        La plupart des CV possèdent le même format classique. Ils n'attirent pas l'attention du recruteur<br/>
+        En partenariat avec des designers et des professionnels des ressources humaines, nous vous fournissons
+        un CV moderne <b>complété avec vos propres informations.</b><br/>
+        Votre job : uploadez votre CV, choisissez un modèle. <b>Nous faisons le reste.</b><br/>
+      cta: 'Uploader mon CV'
+      step1: '1. Uploadez votre CV original'
+      step2: '2. Sélectionnez votre modèle'
+      step3: '3. Recevez votre CV personnalisé'

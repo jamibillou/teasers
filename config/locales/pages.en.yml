@@ -38,10 +38,13 @@ en:
       buy_title: "Buy this template for $0.99"
       format_note: "All our templates are available in both Microsoft Office, iWork and OpenOffice.org formats."
     resume:
-      title: "Give your resume a chance to look great"
+      title: 'Give your resume a chance to look great'
       subtitle: "Put your CV on top of the recruiter's stack"
       description_html: >
-        Most of resumes have the same black and white design. They don't catch the eye of the recruiter.
-        We provide you templates made in collaboration with designers and HR professionals.<br/>
+        Most of resumes have the same black and white design. They don't catch the eye of the recruiter.<br/>
+        In collaboration with designers and HR professionals, we provide you a well-designed resume <b>filled with your own information</b>.<br/><br/>
         Your mission: upload your CV, select a template. <b>We do the rest.</b><br/>
-      cta: "Upload my CV"
+      cta: 'Upload my CV'
+      step1: '1. Upload your original CV'
+      step2: '2. Choose your template'
+      step3: '3. Receive your kick-ass resume'
