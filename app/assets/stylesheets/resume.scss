@@ -25,7 +25,7 @@
 #steps{
 	.step{
 		@include border-radius(5px);
-		background:linear-gradient(rgb(0, 131, 224), rgb(0, 109, 186));;
+		@include buttonBackground(rgb(0, 131, 224), rgb(0, 109, 186));
 		padding: 10px 5px;
 		color:$white;
 		min-height: 160px;

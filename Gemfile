@@ -10,6 +10,7 @@ gem 'i18n-js'
 gem 'sass-rails'
 gem 'bootstrap-sass', '2.2.2.0'
 gem 'font-awesome-rails'
+gem 'split'
 
 group :development do
   gem 'heroku'

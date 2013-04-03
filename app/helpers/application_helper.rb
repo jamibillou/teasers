@@ -100,8 +100,10 @@ module ApplicationHelper
   def select_view_event
     if request.fullpath.include?('templates')
       mixpanel_call 'track', 'Clicked template CTA'
-    elsif request.subdomain.match(/^join|staging|resume$/) && !request.fullpath.include?('templates')
+    elsif request.subdomain.match(/^join|staging$/) && !request.fullpath.include?('templates')
       mixpanel_call 'track', 'Viewed templates teaser page'
+    elsif request.subdomain.match(/^resume$/) && !request.fullpath.include?('templates')
+      mixpanel_call('track', 'Viewed templates teaser page', "{'price' : #{@price}}")
     else
       mixpanel_call 'track', 'Viewed feedback teaser page'
     end

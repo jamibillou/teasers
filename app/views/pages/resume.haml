@@ -19,11 +19,11 @@
 	.span4.step
 		.icon
 			.icon-picture
-		=t 'pages.resume.step2'
+		=t @price == 'false' ? 'pages.resume.step2' : 'pages.resume.step2_alt'
 	.span4.step
 		.icon
 			.icon-thumbs-up
-		=t 'pages.resume.step3'
+		=t @price == 'false' ? 'pages.resume.step3' : 'pages.resume.step3_alt'
 
 %footer
 	.row-fluid

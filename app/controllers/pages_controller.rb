@@ -16,6 +16,7 @@ class PagesController < ApplicationController
 
   def resume
     @title = t('pages.resume.title')
+    @price = ab_test('Price notification','true','false')
   end
 
   private

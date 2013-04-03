@@ -49,4 +49,6 @@ fr:
       cta: 'Uploader mon CV'
       step1: '1. Uploadez votre CV original'
       step2: '2. Sélectionnez votre modèle'
+      step2_alt: '2.Sélectionnez votre modèle (de 5 à 10€)'
       step3: '3. Recevez votre CV personnalisé'
+      step3_alt: '3. Recevez votre CV personnalisé sous 48h'

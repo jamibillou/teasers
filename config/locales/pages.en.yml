@@ -47,4 +47,6 @@ en:
       cta: 'Upload my CV'
       step1: '1. Upload your original CV'
       step2: '2. Choose your template'
+      step2_alt: '2. Choose your template (from $5 to $10)'
       step3: '3. Receive your kick-ass resume'
+      step3_alt: '3. Receive your kick-ass template within 48h'
