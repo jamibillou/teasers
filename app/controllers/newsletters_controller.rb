@@ -21,7 +21,7 @@ class NewslettersController < ApplicationController
 
 	  def get_worksheet
 	  	session = GoogleDrive.login('francksabattier@gmail.com','13JamirO10')
-	  	if request.subdomain.match(/^(join|staging)$/)
+	  	if request.subdomain.match(/^(join|staging|resume)$/)
 				session.spreadsheet_by_key('0Anvdw7Lk3scOdG5mdEJwR0xNLVBTbzI5MnM0T2dKdkE').worksheets[0]
 	  	elsif request.subdomain.match(/^(signup)$/)
 	  		session.spreadsheet_by_key('0Anvdw7Lk3scOdF9qbEVxODZRNVE3N3YzLUlyTlpDelE').worksheets[0]

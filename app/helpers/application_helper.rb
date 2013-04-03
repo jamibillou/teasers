@@ -27,7 +27,7 @@ module ApplicationHelper
   # ---------
 
   def analytics_init
-    if request.subdomain.present? && request.subdomain.match(/^join$/)
+    if request.subdomain.present? && request.subdomain.match(/^join|resume$/)
       ga_init(4)
     elsif request.subdomain.present? && request.subdomain.match(/^signup$/)
       ga_init(5)
@@ -100,7 +100,7 @@ module ApplicationHelper
   def select_view_event
     if request.fullpath.include?('templates')
       mixpanel_call 'track', 'Clicked template CTA'
-    elsif request.subdomain.match(/^join|staging$/) && !request.fullpath.include?('templates')
+    elsif request.subdomain.match(/^join|staging|resume$/) && !request.fullpath.include?('templates')
       mixpanel_call 'track', 'Viewed templates teaser page'
     else
       mixpanel_call 'track', 'Viewed feedback teaser page'
