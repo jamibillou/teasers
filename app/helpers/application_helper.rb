@@ -101,7 +101,7 @@ module ApplicationHelper
     if request.fullpath.include?('templates')
       mixpanel_call 'track', 'Clicked template CTA'
     elsif request.subdomain.match(/^join|staging$/) && !request.fullpath.include?('templates')
-      mixpanel_call 'track', 'Viewed templates teaser page'
+      mixpanel_call('track', 'Viewed templates teaser page', "{'price' : #{@price}}")
     elsif request.subdomain.match(/^resume$/) && !request.fullpath.include?('templates')
       mixpanel_call('track', 'Viewed templates teaser page', "{'price' : #{@price}}")
     else
