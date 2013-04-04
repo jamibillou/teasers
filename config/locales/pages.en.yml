@@ -13,8 +13,11 @@ en:
       cta_text: 'Choose and download the template you prefer.'
       cta: "View our templates"
       cta_title: "View our templates"
-      buy_button: 'Buy'
+      buy_button: 'Buy now'
       price: 'for %{price}€'
+      step1: '1. Choose your template'
+      step2: '2. Upload your current CV'
+      step3: '3. Receive your kick-ass resume'
     signup:
       title: 'Get your CV & letter checked by professionals'
       community_title: 'Community of experts'

@@ -13,7 +13,7 @@
           = link_to image_tag("cvs/cv_1_#{default_locale}_small.png", alt: 'CV 1'), asset_path("cvs/cv_1_#{default_locale}_big.png"), title: t('pages.templates.view_big')
           %br/
           %a.btn.btn-primary{href: '#notif-modal', 'data-toggle' => 'modal', title: t('pages.templates.buy_title'), id: 'cta_template_1'}=t 'pages.join.buy_button'
-          %span.price=t 'pages.join.price',price: @price
+          %span.price=t 'pages.join.price',price: @price 
         .template
           = link_to image_tag("cvs/cv_2_#{default_locale}_small.png", alt: 'CV 2'), asset_path("cvs/cv_2_#{default_locale}_big.png"), title: t('pages.templates.view_big')
           %br/
@@ -36,6 +36,20 @@
           %span.price=t 'pages.join.price',price: @price
       .arrow-right{id:'arrow-right', class: 'visible-desktop'}
       .arrow-right.hidden-desktop
+
+.row-fluid#steps
+  .span4.step
+    .icon
+      .icon-picture
+    =t 'pages.join.step1'
+  .span4.step
+    .icon
+      .icon-download-alt
+    =t 'pages.join.step2'
+  .span4.step
+    .icon
+      .icon-thumbs-up
+    =t 'pages.join.step3'
 
 %footer
   .row-fluid
