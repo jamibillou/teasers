@@ -56,14 +56,14 @@
       }
       position:absolute;
       left:0;
-      top:380px;
+      top:419px;
       width:100px;
       height:100px;
       background: url('base/arrow-left.png') no-repeat center;
       cursor:pointer;
-      // phone and tablet
-      @media (max-width:979px){
-        top:305px;
+      // phone
+      @media (max-width:767px){
+        top:453px;
       }
     }
     .arrow-right{
@@ -74,14 +74,14 @@
       }
       position:absolute;
       right:0;
-      top:388px;
+      top:427px;
       width:100px;
       height:100px;
       background: url('base/arrow-right.png') no-repeat center;
       cursor:pointer;
-      // phone and tablet
-      @media (max-width:979px){
-        top:312px;
+      // phone
+      @media (max-width:767px){
+        top:460px;
       }
     }
   }

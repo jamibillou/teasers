@@ -21,6 +21,10 @@
   }
   h3{
     margin-top: 10px;
+    // phone
+    @media (max-width:767px){
+      font-size: 17px;
+    }
   }
 }
 
