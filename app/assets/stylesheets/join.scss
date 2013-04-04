@@ -134,15 +134,16 @@
   }
 }
 
+.explain{
+  margin-left:40px;
+}
+
 #steps{
   width: 90%;
   margin-left: 5%;
+  margin-top: 50px;
   .step{
-    @include border-radius(5px);
-    background: $white;
-    padding: 10px 5px;
     color:$grayDark;
-    min-height: 160px;
     font-size: 22px;
     line-height: 25px;
     // tablet
@@ -156,10 +157,10 @@
     }
   }
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   .icon{
     margin-bottom:15px;
-    font-size:65px;
+    font-size:45px;
   }
 }
 

@@ -15,6 +15,7 @@ fr:
       cta_title: 'Voir tous nos modèles'
       buy_button: 'Acheter'
       price: 'pour %{price}€'
+      explain: 'Comment cela fonctionne-t-il ?'
       step1: '1. Sélectionnez votre modèle'
       step2: '2. Envoyez votre CV actuel'
       step3: '3. Recevez votre CV personnalisé'

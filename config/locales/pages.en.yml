@@ -15,6 +15,7 @@ en:
       cta_title: "View our templates"
       buy_button: 'Buy now'
       price: 'for %{price}€'
+      explain: 'So how does it work?'
       step1: '1. Choose your template'
       step2: '2. Upload your current CV'
       step3: '3. Receive your kick-ass resume'
