@@ -5,13 +5,16 @@ fr:
     about_us_description_html: >
       Joblr a pour vocation de vous aider dans votre recherche d'emploi. N'hésitez pas à nous <a href='mailto:team@joblr.co'>contacter</a> directement pour parler de votre situation et essayer ensemble de la débloquer.
     join:
-      title: 'Votre CV et lettre de motivation, réalisés par des professionnels'
+      title: 'Votre CV professionnel sans le moindre effort'
+      subtitle: 'Envoyez votre CV original, nous faisons le reste'
       download: 'Télécharger'
       partners: 'Partenaires de votre réussite'
       partners_description: "Nous travaillons avec de nombreux professionnels des ressources humaines, recruteurs et directeurs d'entreprise pour créer le CV et la lettre de motivation qui vous aideront à décrocher votre prochain job."
       cta_text: 'Choisissez et téléchargez votre modèle.'
       cta: "Voir notre collection"
       cta_title: 'Voir tous nos modèles'
+      buy_button: 'Acheter'
+      price: 'pour %{price}€'
     signup:
       title: 'Votre CV et lettre revus et corrigés par des professionnels'
       community_title: "Une communauté d'experts"

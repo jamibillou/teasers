@@ -48,7 +48,7 @@ $ ->
   $('.arrow-left').click -> moveSlider('left')
   $('.arrow-right').click -> moveSlider('right')
 
-  if $(location).attr('pathname') is '/templates'
+  if getSubdomain() is 'join'
     $('body').bind('keydown', (e) ->
       moveSlider('right') if e.keyCode is 39
       moveSlider('left')  if e.keyCode is 37)

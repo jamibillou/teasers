@@ -15,6 +15,7 @@
 }
 
 #templates{
+  margin-top: 50px;
   #wrapper{
     overflow:hidden;
     #slider{
@@ -86,6 +87,7 @@
   }
   &.join{
     margin-top:60px;
+    margin-bottom: 70px;
     #wrapper #slider .template{
       margin-right:35px;
       img{

@@ -21,16 +21,16 @@
 .row-fluid#steps
 	.span4.step
 		.icon
-			.icon-download-alt
+			.icon-upload
 		=t 'pages.resume.step1'
 	.span4.step
 		.icon
 			.icon-picture
-		=t @price == 'faldse' ? 'pages.resume.step2' : 'pages.resume.step2_alt_html'
+		=t @price == 'false' ? 'pages.resume.step2' : 'pages.resume.step2_alt_html'
 	.span4.step
 		.icon
 			.icon-thumbs-up
-		=t @price == 'faldse' ? 'pages.resume.step3' : 'pages.resume.step3_alt'
+		=t @price == 'false' ? 'pages.resume.step3' : 'pages.resume.step3_alt'
 
 %footer
 	.row-fluid

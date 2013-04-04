@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
   def join
 		@title = t('pages.join.title')
+    @price = ab_test('Price notification','5','10')
 	end
 
 	def signup
@@ -20,7 +21,6 @@ class PagesController < ApplicationController
   end
 
   private
-
     def new_newsletter
       @newsletter = Newsletter.new
     end
