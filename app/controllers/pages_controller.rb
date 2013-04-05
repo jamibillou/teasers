@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def join
 		@title = t('pages.join.title')
-    @price = ab_test('Price notification','5','10')
+    @price = 10
 	end
 
 	def signup
