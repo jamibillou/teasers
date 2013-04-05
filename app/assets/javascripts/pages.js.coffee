@@ -14,6 +14,7 @@ $ ->
   $('.cta-resume').click -> mixpanelCall('Clicked template v2 CTA')
   for i in [1..5]
     $('#cta_template_'+i).bind('click', {i: i}, (evt) ->
+      alert('pouet')
       mixpanelCall('Clicked buy template button', {'Template version' : evt.data.i}))
 
   # Newsletter form
